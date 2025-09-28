@@ -3,11 +3,8 @@
 Generator statycznego RSS dla epiotrkow.pl hostowany na GitHub Pages.
 Uruchamiany co godzinę przez GitHub Actions.
 
-Dopasowany do realnego HTML (wrzesień 2025):
-- P1 = /news/ (nie /wydarzenia-p1)
-- P2..P9 = /news/wydarzenia-pX
-- Linki do artykułów mają postać /news/<slug>,<ID>
-- Tytuły w elementach z klasą .tn-title (czasem <span>, czasem <h5>)
+Poprawka v2: zbieramy linki ze wszystkich selektorów na stronie,
+żeby mieć każdy artykuł, a nie tylko główny.
 """
 
 import re
@@ -20,31 +17,32 @@ from urllib.parse import urljoin
 
 SITE = "https://epiotrkow.pl"
 
-# p1 to /news/, p2..p9 to /news/wydarzenia-pX
-SOURCE_URLS = [f"{SITE}/news/"] + [f"{SITE}/news/wydarzenia-p{i}" for i in range(2, 10)]
+# Strony: p1 = /news/, p2..p20 = /news/wydarzenia-pX
+SOURCE_URLS = [f"{SITE}/news/"] + [f"{SITE}/news/wydarzenia-p{i}" for i in range(2, 21)]
 
-FEED_TITLE = "epiotrkow.pl – Wydarzenia (p1–p9)"
+FEED_TITLE = "epiotrkow.pl – Wydarzenia (p1–p20)"
 FEED_LINK  = f"{SITE}/news/"
-FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl (wydarzenia p1–p9)."
+FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl (wydarzenia p1–p20)."
 
-# Preferowane selektory w kolejności prób
+# Selektory, z których zbieramy linki
 ARTICLE_LINK_SELECTORS = [
-    ".tn-img a[href^='/news/']",      # duży kafel z góry listy
+    ".tn-img a[href^='/news/']",      # duży kafel na górze
     ".bg-white a[href^='/news/']",    # kafelki z h5.tn-title
-    "a[href^='/news/']",              # fallback (odfiltrujemy kategorie regexem)
+    "a[href^='/news/']"               # fallback
 ]
 
-# tylko rzeczywiste artykuły, które mają ID po przecinku, np. /news/slug,59675
+# tylko prawdziwe artykuły (slug,ID)
 ID_LINK = re.compile(r"^/news/.+,\d+$")
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (+https://github.com/) RSS static builder"}
-MAX_ITEMS = 255
+
+MAX_ITEMS = 1000  # ile pozycji w RSS
 
 def fetch_items():
     items = []
     for url in SOURCE_URLS:
         try:
-            r = requests.get(url, headers=HEADERS, timeout=20)
+            r = requests.get(url, headers=HEADERS, timeout=25)
             r.raise_for_status()
         except Exception as e:
             print(f"[WARN] Nie udało się pobrać: {url} -> {e}", file=sys.stderr)
@@ -52,51 +50,50 @@ def fetch_items():
 
         soup = BeautifulSoup(r.text, "lxml")
 
+        # zbierz ze wszystkich selektorów
         anchors = []
         for sel in ARTICLE_LINK_SELECTORS:
-            anchors = soup.select(sel)
-            if anchors:
-                break
+            anchors.extend(soup.select(sel))
 
-        if not anchors:
-            print(f"[WARN] Brak dopasowań selektorów na: {url}", file=sys.stderr)
-            continue
-
+        # deduplikacja po href
+        seen_href = set()
+        clean = []
         for a in anchors:
             href = a.get("href")
             if not href:
                 continue
+            if href in seen_href:
+                continue
+            seen_href.add(href)
+            clean.append(a)
 
-            # filtr: tylko artykuły z ID po przecinku
+        for a in clean:
+            href = a.get("href")
             if not ID_LINK.match(href):
                 continue
 
             link = urljoin(SITE, href)
 
-            # tytuł – najpierw .tn-title w obrębie <a>
+            # Tytuł — próby w kolejności
             title_el = a.select_one(".tn-title")
             if title_el:
                 title = title_el.get_text(" ", strip=True)
             else:
-                # czasem tytuł w <h5 class="tn-title"> będącym dzieckiem <a>
                 h5 = a.select_one("h5.tn-title")
                 title = h5.get_text(" ", strip=True) if h5 else ""
 
             if not title:
-                # awaryjnie: cokolwiek tekstowego w <a>
                 title = a.get_text(" ", strip=True)
 
             if not title:
-                # jeszcze jedna próba: najbliższy element z klasą tn-title
-                sibling_title = a.find_next(class_="tn-title")
-                if sibling_title:
-                    title = sibling_title.get_text(" ", strip=True)
+                sibling = a.find_next(class_="tn-title")
+                if sibling:
+                    title = sibling.get_text(" ", strip=True)
 
             if not title:
-                # ostatecznie: alt obrazka
                 img = a.find("img")
                 if img and img.get("alt"):
-                    title = img.get("alt").strip()
+                    title = img["alt"].strip()
 
             if not title:
                 title = "Bez tytułu"
@@ -104,7 +101,7 @@ def fetch_items():
             guid = hashlib.sha1(link.encode("utf-8")).hexdigest()
             items.append({"title": title, "link": link, "guid": guid})
 
-    # deduplikacja po linku z zachowaniem kolejności
+    # deduplikacja po linku
     seen, unique = set(), []
     for it in items:
         if it["link"] in seen:
