@@ -1,22 +1,10 @@
-# epiotrkow-rss (fixed)
+# epiotrkow-rss (fixed v2)
 
-Statyczny kanał RSS generowany ze stron listowych epiotrkow.pl:
-- P1 = `/news/`
-- P2..P9 = `/news/wydarzenia-pX`
+Statyczny kanał RSS generowany z list newsów epiotrkow.pl.
 
-Tytuły pobierane z `.tn-title`, linki tylko w formacie `/news/<slug>,<ID>`.
+- Zbiera artykuły z `/news/` oraz `/news/wydarzenia-p2 … p20`.
+- Tytuły pobierane z `.tn-title`, `<h5.tn-title>`, alt obrazka itd.
+- Workflow w `.github/workflows/rss.yml` uruchamia `scraper.py` co godzinę (UTC).
+- Wynik to `feed.xml` gotowy do publikacji na GitHub Pages.
 
-## Użycie
-1. Workflow `.github/workflows/rss.yml` uruchamia `scraper.py` co 1 godzinę (UTC).
-2. W repo pojawia się `feed.xml`.
-3. Włącz GitHub Pages → link do RSS:
-   `https://<twoj-login>.github.io/epiotrkow-rss/feed.xml`
-
-## Dostosowanie
-- Jeśli portal zmieni strukturę:
-  - zaktualizuj `SOURCE_URLS`,
-  - dopasuj `ARTICLE_LINK_SELECTORS` lub regex `ID_LINK`,
-  - ew. rozszerz pobieranie tytułu (np. inna klasa).
-
-## Zależności
-`requests`, `beautifulsoup4`, `lxml`
+Adres RSS po włączeniu Pages:
