@@ -27,9 +27,9 @@ SITE = "https://epiotrkow.pl"
 # Strony: p1 = /news/, p2..p20 = /news/wydarzenia-pX
 SOURCE_URLS = [f"{SITE}/news/"] + [f"{SITE}/news/wydarzenia-p{i}" for i in range(2, 21)]
 
-FEED_TITLE = "epiotrkow.pl – Wydarzenia (p1–p20)"
+FEED_TITLE = "epiotrkow.pl"
 FEED_LINK  = f"{SITE}/news/"
-FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl (wydarzenia p1–p20)."
+FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl."
 
 # Selektory, z których zbieramy linki (agregujemy ze wszystkich)
 ARTICLE_LINK_SELECTORS = [
@@ -47,7 +47,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (+https://github.com/) RSS static builder"
 MAX_ITEMS = 500
 
 # ILE artykułów wzbogacać o datę/lead (żeby workflow nie przekraczał limitów czasu)
-DETAIL_LIMIT = 150
+DETAIL_LIMIT = 500
 
 def guess_mime(url: str) -> str:
     if not url:
