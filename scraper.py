@@ -8,25 +8,28 @@ Funkcje:
 - Dodaje obrazek: <enclosure>, <media:content>, <media:thumbnail>.
 - Dociąga z podstrony artykułu datę publikacji i LEAD (z kilku akapitów),
   a lead wstrzykuje do <description> razem z miniaturą <img>.
+- Fallbacki na teasery ładowane JS-em: JSON-LD (Article/NewsArticle) i AMP.
 """
 
 import re
 import sys
 import time
+import json
 import hashlib
+from datetime import datetime
+from urllib.parse import urljoin
+
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
-from datetime import datetime
 
 SITE = "https://epiotrkow.pl"
 
 # Strony: p1 = /news/, p2..p20 = /news/wydarzenia-pX (zwiększ zakres, jeśli chcesz)
 SOURCE_URLS = [f"{SITE}/news/"] + [f"{SITE}/news/wydarzenia-p{i}" for i in range(2, 21)]
 
-FEED_TITLE = "epiotrkow.pl – Wydarzenia (p1–p20)"
+FEED_TITLE = "epiotrkow.pl"
 FEED_LINK  = f"{SITE}/news/"
-FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl (wydarzenia p1–p20)."
+FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl."
 
 # Selektory, z których zbieramy linki (agregujemy ze wszystkich)
 ARTICLE_LINK_SELECTORS = [
@@ -44,7 +47,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (+https://github.com/) RSS static builder"
 MAX_ITEMS = 500
 
 # ile artykułów wzbogacać o datę/lead (żeby workflow nie przekraczał limitów czasu)
-DETAIL_LIMIT = 300
+DETAIL_LIMIT = 500
 
 def guess_mime(url: str) -> str:
     if not url:
@@ -138,47 +141,132 @@ def build_lead_from_paras(soup: BeautifulSoup, max_chars: int = 800) -> str | No
         lead = cut.rstrip() + "…"
     return lead
 
+def extract_from_jsonld(soup: BeautifulSoup) -> tuple[str | None, str | None]:
+    """Spróbuj wyciągnąć datę i opis/treść z JSON-LD (Article/NewsArticle)."""
+    pub_rfc, lead = None, None
+    for tag in soup.find_all("script", type="application/ld+json"):
+        raw = tag.string or (tag.contents[0] if tag.contents else "")
+        if not raw:
+            continue
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+
+        candidates = data if isinstance(data, list) else [data]
+        for obj in candidates:
+            if not isinstance(obj, dict):
+                continue
+            typ = obj.get("@type") or obj.get("type")
+            if isinstance(typ, list):
+                typ = next((t for t in typ if isinstance(t, str)), None)
+            if not typ or not isinstance(typ, str):
+                continue
+            if "Article" not in typ and "NewsArticle" not in typ:
+                continue
+
+            # data publikacji
+            dp = obj.get("datePublished") or obj.get("dateCreated")
+            if dp and not pub_rfc:
+                try:
+                    if dp.endswith("Z"):
+                        dt = datetime.fromisoformat(dp.replace("Z", "+00:00"))
+                        pub_rfc = to_rfc2822(dt.astimezone(tz=None).replace(tzinfo=None))
+                    else:
+                        dt = datetime.fromisoformat(dp)
+                        pub_rfc = to_rfc2822(dt.replace(tzinfo=None))
+                except Exception:
+                    pass
+
+            # opis / treść
+            desc = obj.get("description")
+            body = obj.get("articleBody")
+            txt = (body or desc)
+            if txt and not lead:
+                lead = " ".join(str(txt).split())
+
+        if pub_rfc or lead:
+            break
+    return pub_rfc, lead
+
 def fetch_article_details(url: str) -> tuple[str | None, str | None]:
-    """Zwraca (pubDate_rfc2822, lead_txt) z podstrony artykułu."""
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=25)
+    """Zwraca (pubDate_rfc2822, lead_txt) z podstrony artykułu,
+    próbując: JSON-LD → AMP → klasyczny HTML.
+    """
+    def _get(url_):
+        r = requests.get(url_, headers=HEADERS, timeout=25)
         r.raise_for_status()
+        return BeautifulSoup(r.text, "lxml")
+
+    pub_rfc, lead = None, None
+
+    # 0) Strona podstawowa
+    try:
+        soup = _get(url)
     except Exception as e:
         print(f"[WARN] Nie udało się pobrać artykułu: {url} -> {e}", file=sys.stderr)
         return None, None
 
-    soup = BeautifulSoup(r.text, "lxml")
+    # 1) JSON-LD (najpierw)
+    j_pub, j_lead = extract_from_jsonld(soup)
+    if j_pub:
+        pub_rfc = j_pub
+    if j_lead and len(j_lead) > 60:
+        lead = j_lead
 
-    # 1) DATA: meta/og
-    meta = soup.find("meta", attrs={"property": "article:published_time"}) \
-        or soup.find("meta", attrs={"name": "article:published_time"}) \
-        or soup.find("meta", attrs={"itemprop": "datePublished"}) \
-        or soup.find("meta", attrs={"name": "date"})
-    pub_rfc = None
-    if meta and meta.get("content"):
-        iso = meta["content"].strip()
-        try:
-            if iso.endswith("Z"):
-                dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
-                pub_rfc = to_rfc2822(dt.astimezone(tz=None).replace(tzinfo=None))
-            else:
-                dt = datetime.fromisoformat(iso)
-                pub_rfc = to_rfc2822(dt.replace(tzinfo=None))
-        except Exception:
-            pub_rfc = None
+    # 2) AMP (jeśli wciąż brakuje dobrego leada lub daty)
+    if not pub_rfc or not lead:
+        amp = soup.find("link", rel=lambda v: v and "amphtml" in v.lower())
+        if amp and amp.get("href"):
+            try:
+                amp_url = urljoin(url, amp["href"])
+                amp_soup = _get(amp_url)
+                if not pub_rfc:
+                    a_pub, _ = extract_from_jsonld(amp_soup)
+                    if a_pub:
+                        pub_rfc = a_pub
+                if not lead:
+                    a_lead = build_lead_from_paras(amp_soup, max_chars=800)
+                    if a_lead and len(a_lead) > 60:
+                        lead = a_lead
+            except Exception as e:
+                print(f"[WARN] AMP fetch failed: {amp_url} -> {e}", file=sys.stderr)
 
-    # 2) DATA: fallback z .news-date / <time>
+    # 3) Klasyczny HTML – meta + akapity (fallback)
     if not pub_rfc:
-        date_el = soup.select_one(".news-date") or soup.find("time")
-        if date_el:
-            pub_rfc = parse_polish_date(date_el.get_text(" ", strip=True))
+        meta = soup.find("meta", attrs={"property": "article:published_time"}) \
+            or soup.find("meta", attrs={"name": "article:published_time"}) \
+            or soup.find("meta", attrs={"itemprop": "datePublished"}) \
+            or soup.find("meta", attrs={"name": "date"})
+        if meta and meta.get("content"):
+            iso = meta["content"].strip()
+            try:
+                if iso.endswith("Z"):
+                    dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+                    pub_rfc = to_rfc2822(dt.astimezone(tz=None).replace(tzinfo=None))
+                else:
+                    dt = datetime.fromisoformat(iso)
+                    pub_rfc = to_rfc2822(dt.replace(tzinfo=None))
+            except Exception:
+                pass
+        if not pub_rfc:
+            date_el = soup.select_one(".news-date") or soup.find("time")
+            if date_el:
+                pub_rfc = parse_polish_date(date_el.get_text(" ", strip=True))
 
-    # 3) LEAD: kilka akapitów (do max_chars), fallback meta description
-    lead = build_lead_from_paras(soup, max_chars=800)
     if not lead:
-        md = soup.find("meta", attrs={"name": "description"})
-        if md and md.get("content"):
-            lead = md["content"].strip()
+        lead = build_lead_from_paras(soup, max_chars=800)
+        if not lead:
+            md = soup.find("meta", attrs={"name": "description"})
+            if md and md.get("content"):
+                lead = md["content"].strip()
+
+    # lekkie czyszczenie (uniknij ucięcia w pół zdania/wyrazu)
+    if lead:
+        lead = " ".join(lead.split())
+        if len(lead) < 80 and not re.search(r"[.!?…]$", lead):
+            # bardzo krótki teaser bez interpunkcji na końcu – odrzuć
+            lead = None
 
     return pub_rfc, lead
 
