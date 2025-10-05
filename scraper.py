@@ -3,14 +3,11 @@
 Generator statycznego RSS dla epiotrkow.pl hostowany na GitHub Pages.
 Uruchamiany co godzinę przez GitHub Actions.
 
-Wersja z obrazkami + datą publikacji + wstępniakiem (lead) + miniaturą w <description>:
-- zbieramy linki ze wszystkich selektorów (pełna lista artykułów),
-- wyciągamy URL obrazka (data-src/src) i dodajemy:
-  * <enclosure> (RSS 2.0),
-  * <media:content> oraz <media:thumbnail> (MRSS),
-  * <img> w treści <description> (HTML).
-- dla pierwszych DETAIL_LIMIT artykułów pobieramy stronę artykułu i
-  wydobywamy datę publikacji oraz pierwszy akapit (lead).
+Funkcje:
+- Zbiera linki ze wszystkich selektorów (pełna lista artykułów).
+- Dodaje obrazek: <enclosure>, <media:content>, <media:thumbnail>.
+- Dociąga z podstrony artykułu datę publikacji i LEAD (z kilku akapitów),
+  a lead wstrzykuje do <description> razem z miniaturą <img>.
 """
 
 import re
@@ -24,12 +21,12 @@ from datetime import datetime
 
 SITE = "https://epiotrkow.pl"
 
-# Strony: p1 = /news/, p2..p20 = /news/wydarzenia-pX
+# Strony: p1 = /news/, p2..p20 = /news/wydarzenia-pX (zwiększ zakres, jeśli chcesz)
 SOURCE_URLS = [f"{SITE}/news/"] + [f"{SITE}/news/wydarzenia-p{i}" for i in range(2, 21)]
 
-FEED_TITLE = "epiotrkow.pl"
+FEED_TITLE = "epiotrkow.pl – Wydarzenia (p1–p20)"
 FEED_LINK  = f"{SITE}/news/"
-FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl."
+FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl (wydarzenia p1–p20)."
 
 # Selektory, z których zbieramy linki (agregujemy ze wszystkich)
 ARTICLE_LINK_SELECTORS = [
@@ -43,11 +40,11 @@ ID_LINK = re.compile(r"^/news/.+,\d+$")
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (+https://github.com/) RSS static builder"}
 
-# ILE pozycji zwraca feed
+# ile pozycji w RSS
 MAX_ITEMS = 500
 
-# ILE artykułów wzbogacać o datę/lead (żeby workflow nie przekraczał limitów czasu)
-DETAIL_LIMIT = 500
+# ile artykułów wzbogacać o datę/lead (żeby workflow nie przekraczał limitów czasu)
+DETAIL_LIMIT = 300
 
 def guess_mime(url: str) -> str:
     if not url:
@@ -117,6 +114,30 @@ def parse_polish_date(text: str) -> str | None:
     except Exception:
         return None
 
+def build_lead_from_paras(soup: BeautifulSoup, max_chars: int = 800) -> str | None:
+    """Zbuduj lead z kilku pierwszych akapitów (do max_chars), przytnij na granicy wyrazu."""
+    paras = soup.select(
+        ".news-content p, .article-content p, .entry-content p, "
+        "article .content p, article p, .post-content p, .content p"
+    )
+    chunks, total = [], 0
+    for p in paras:
+        t = p.get_text(" ", strip=True)
+        if not t or len(t) < 30:
+            continue  # pomiń bardzo krótkie/ozdobne akapity
+        chunks.append(t)
+        total += len(t) + 1
+        if total >= max_chars:
+            break
+    if not chunks:
+        return None
+    lead = " ".join(chunks)
+    if len(lead) > max_chars:
+        cut = lead[:max_chars]
+        cut = cut.rsplit(" ", 1)[0] if " " in cut else cut
+        lead = cut.rstrip() + "…"
+    return lead
+
 def fetch_article_details(url: str) -> tuple[str | None, str | None]:
     """Zwraca (pubDate_rfc2822, lead_txt) z podstrony artykułu."""
     try:
@@ -152,15 +173,8 @@ def fetch_article_details(url: str) -> tuple[str | None, str | None]:
         if date_el:
             pub_rfc = parse_polish_date(date_el.get_text(" ", strip=True))
 
-    # 3) LEAD: pierwszy sensowny akapit
-    lead = None
-    for sel in [".news-content p", ".article-content p", "article p", ".content p", ".post-content p", ".entry-content p"]:
-        p = soup.select_one(sel)
-        if p:
-            txt = p.get_text(" ", strip=True)
-            if txt and len(txt) > 40:
-                lead = txt
-                break
+    # 3) LEAD: kilka akapitów (do max_chars), fallback meta description
+    lead = build_lead_from_paras(soup, max_chars=800)
     if not lead:
         md = soup.find("meta", attrs={"name": "description"})
         if md and md.get("content"):
@@ -281,7 +295,6 @@ def build_rss(items):
         lead_text = it.get("lead") or it["title"]
         img_html = ""
         if it.get("image"):
-            # prosta miniatura w opisie (bez stylów – czytniki same dopasują)
             img_html = f'<p><img src="{it["image"]}" alt="miniatura"/></p>'
         desc_html = f"{img_html}<p>{lead_text}</p>"
 
