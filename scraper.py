@@ -27,7 +27,7 @@ SITE = "https://epiotrkow.pl"
 # Strony: p1 = /news/, p2..p20 = /news/wydarzenia-pX
 SOURCE_URLS = [f"{SITE}/news/"] + [f"{SITE}/news/wydarzenia-p{i}" for i in range(2, 21)]
 
-FEED_TITLE = "epiotrkow.pl – Wydarzenia v2"
+FEED_TITLE = "epiotrkow.pl – Wydarzenia v3"
 FEED_LINK  = f"{SITE}/news/"
 FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl."
 
