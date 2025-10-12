@@ -28,9 +28,9 @@ SITE = "https://epiotrkow.pl"
 # Strony: p1 = /news/, p2..p20 = /news/wydarzenia-pX (zwiększ zakres, jeśli chcesz)
 SOURCE_URLS = [f"{SITE}/news/"] + [f"{SITE}/news/wydarzenia-p{i}" for i in range(2, 21)]
 
-FEED_TITLE = "epiotrkow.pl – Wydarzenia (p1–p20)"
+FEED_TITLE = "epiotrkow.pl – Wydarzenia"
 FEED_LINK  = f"{SITE}/news/"
-FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl (wydarzenia p1–p20)."
+FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl."
 
 # Selektory, z których zbieramy linki (agregujemy ze wszystkich)
 ARTICLE_LINK_SELECTORS = [
