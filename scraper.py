@@ -46,8 +46,8 @@ HEADERS: Dict[str, str] = {
 
 MAX_ITEMS = 500
 DETAIL_LIMIT = 500          # ile artykułów wzbogacamy o datę/lead
-LEAD_MAX_CHARS = 800        # docelowa długość leada
-LEAD_MIN_GOOD = 160         # minimalna długość, by uznać lead za „wystarczający”
+LEAD_MAX_CHARS = 1000        # docelowa długość leada
+LEAD_MIN_GOOD = 250         # minimalna długość, by uznać lead za „wystarczający”
 
 # --- pomocnicze ---
 
