@@ -15,6 +15,7 @@ import json
 import html
 import hashlib
 from datetime import datetime
+from typing import Optional, List, Tuple, Dict
 from urllib.parse import urljoin, urlparse, urlunparse, parse_qsl, urlencode
 
 import requests
@@ -30,7 +31,7 @@ FEED_TITLE = "epiotrkow.pl – Wydarzenia v2"
 FEED_LINK  = f"{SITE}/news/"
 FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl."
 
-ARTICLE_LINK_SELECTORS = [
+ARTICLE_LINK_SELECTORS: List[str] = [
     ".tn-img a[href^='/news/']",
     ".bg-white a[href^='/news/']",
     "a[href^='/news/']",
@@ -38,7 +39,7 @@ ARTICLE_LINK_SELECTORS = [
 
 ID_LINK = re.compile(r"^/news/.+,\d+$")
 
-HEADERS = {
+HEADERS: Dict[str, str] = {
     "User-Agent": "Mozilla/5.0 (+https://github.com/) RSS static builder",
     "Accept-Language": "pl-PL,pl;q=0.9,en;q=0.8"
 }
@@ -50,16 +51,19 @@ LEAD_MIN_GOOD = 160         # minimalna długość, by uznać lead za „wystarc
 
 # --- pomocnicze ---
 
-def guess_mime(url: str) -> str:
+def guess_mime(url: Optional[str]) -> str:
     if not url:
         return "image/*"
     u = url.lower()
-    if u.endswith(".webp"):  return "image/webp"
-    if u.endswith(".png"):   return "image/png"
-    if u.endswith(".jpg") or u.endswith(".jpeg"): return "image/jpeg"
+    if u.endswith(".webp"):
+        return "image/webp"
+    if u.endswith(".png"):
+        return "image/png"
+    if u.endswith(".jpg") or u.endswith(".jpeg"):
+        return "image/jpeg"
     return "image/*"
 
-def find_image_url(a: BeautifulSoup, site_base: str) -> str | None:
+def find_image_url(a: BeautifulSoup, site_base: str) -> Optional[str]:
     # 1) w tym samym <a>
     img = a.find("img")
     if img:
@@ -69,7 +73,7 @@ def find_image_url(a: BeautifulSoup, site_base: str) -> str | None:
     # 2) w rodzicach
     parent = a
     for _ in range(4):
-        parent = parent.parent
+        parent = parent.parent  # type: ignore
         if not parent:
             break
         img = parent.find("img")
@@ -94,7 +98,7 @@ PL_MONTHS = {
 def to_rfc2822(dt: datetime) -> str:
     return dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
 
-def parse_polish_date(text: str) -> str | None:
+def parse_polish_date(text: str) -> Optional[str]:
     if not text:
         return None
     m = re.search(r"(\d{1,2})\s+([A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+)\s+(\d{4})", text, re.IGNORECASE)
@@ -110,7 +114,7 @@ def parse_polish_date(text: str) -> str | None:
     except Exception:
         return None
 
-LEAD_SELECTORS = [
+LEAD_SELECTORS: List[str] = [
     "[itemprop='articleBody'] p",
     ".news-body p",
     ".news-content p",
@@ -124,8 +128,8 @@ LEAD_SELECTORS = [
     ".content p",
 ]
 
-def build_lead_from_paras(soup: BeautifulSoup, max_chars: int = LEAD_MAX_CHARS) -> str | None:
-    paras = []
+def build_lead_from_paras(soup: BeautifulSoup, max_chars: int = LEAD_MAX_CHARS) -> Optional[str]:
+    paras: List = []
     for sel in LEAD_SELECTORS:
         found = soup.select(sel)
         if found:
@@ -134,7 +138,8 @@ def build_lead_from_paras(soup: BeautifulSoup, max_chars: int = LEAD_MAX_CHARS) 
     if not paras:
         paras = soup.select("main p") or soup.find_all("p")
 
-    chunks, total = [], 0
+    chunks: List[str] = []
+    total = 0
     for p in paras:
         t = p.get_text(" ", strip=True)
         t = html.unescape(t)
@@ -153,8 +158,9 @@ def build_lead_from_paras(soup: BeautifulSoup, max_chars: int = LEAD_MAX_CHARS) 
         lead = cut.rstrip() + "…"
     return lead
 
-def extract_from_jsonld(soup: BeautifulSoup) -> tuple[str | None, str | None]:
-    pub_rfc, lead = None, None
+def extract_from_jsonld(soup: BeautifulSoup) -> Tuple[Optional[str], Optional[str]]:
+    pub_rfc: Optional[str] = None
+    lead: Optional[str] = None
     for tag in soup.find_all("script", type="application/ld+json"):
         raw = tag.string or (tag.contents[0] if tag.contents else "")
         if not raw:
@@ -176,10 +182,10 @@ def extract_from_jsonld(soup: BeautifulSoup) -> tuple[str | None, str | None]:
             dp = obj.get("datePublished") or obj.get("dateCreated")
             if dp and not pub_rfc:
                 try:
-                    if dp.endswith("Z"):
+                    if isinstance(dp, str) and dp.endswith("Z"):
                         dt = datetime.fromisoformat(dp.replace("Z", "+00:00"))
                         pub_rfc = to_rfc2822(dt.astimezone(tz=None).replace(tzinfo=None))
-                    else:
+                    elif isinstance(dp, str):
                         dt = datetime.fromisoformat(dp)
                         pub_rfc = to_rfc2822(dt.replace(tzinfo=None))
                 except Exception:
@@ -196,7 +202,7 @@ def extract_from_jsonld(soup: BeautifulSoup) -> tuple[str | None, str | None]:
             break
     return pub_rfc, lead
 
-def trafilatura_lead(url: str, max_chars: int = LEAD_MAX_CHARS) -> str | None:
+def trafilatura_lead(url: str, max_chars: int = LEAD_MAX_CHARS) -> Optional[str]:
     try:
         downloaded = trafilatura.fetch_url(url)
         if not downloaded:
@@ -219,7 +225,7 @@ def trafilatura_lead(url: str, max_chars: int = LEAD_MAX_CHARS) -> str | None:
         print(f"[WARN] trafilatura failed for {url}: {e}", file=sys.stderr)
         return None
 
-def try_amp_variants(url: str) -> list[str]:
+def try_amp_variants(url: str) -> List[str]:
     """Wygeneruj kandydatów AMP, nawet gdy brak rel=amphtml."""
     cand = set()
     def with_query(u, kv):
@@ -235,7 +241,7 @@ def try_amp_variants(url: str) -> list[str]:
         cand.add(urlunparse(pr._replace(path=pr.path.rstrip("/") + "/amp")))
     return [c for c in cand if c != url]
 
-def try_gallery_variant(url: str) -> str | None:
+def try_gallery_variant(url: str) -> Optional[str]:
     """Dla /news/slug,ID -> /galeria/slug,ID"""
     try:
         if "/news/" not in url or "," not in url:
@@ -247,14 +253,15 @@ def try_gallery_variant(url: str) -> str | None:
 
 # --- główne pobranie szczegółów ---
 
-def fetch_article_details(url: str) -> tuple[str | None, str | None]:
+def fetch_article_details(url: str) -> Tuple[Optional[str], Optional[str]]:
     """Zwraca (pubDate_rfc2822, lead_txt) z podstrony artykułu."""
-    def _get(url_):
+    def _get(url_: str) -> BeautifulSoup:
         r = requests.get(url_, headers=HEADERS, timeout=25)
         r.raise_for_status()
         return BeautifulSoup(r.text, "lxml")
 
-    pub_rfc, lead = None, None
+    pub_rfc: Optional[str] = None
+    lead: Optional[str] = None
 
     # 0) Strona podstawowa
     try:
@@ -271,8 +278,8 @@ def fetch_article_details(url: str) -> tuple[str | None, str | None]:
         lead = j_lead
 
     # 2) AMP (link rel oraz heurystyki)
-    amp_hrefs = []
-    amp_tag = soup.find("link", rel=lambda v: v and "amphtml" in v.lower())
+    amp_hrefs: List[str] = []
+    amp_tag = soup.find("link", rel=lambda v: v and "amphtml" in str(v).lower())
     if amp_tag and amp_tag.get("href"):
         amp_hrefs.append(urljoin(url, amp_tag["href"]))
     amp_hrefs.extend(try_amp_variants(url))
@@ -303,10 +310,10 @@ def fetch_article_details(url: str) -> tuple[str | None, str | None]:
         if meta and meta.get("content"):
             iso = meta["content"].strip()
             try:
-                if iso.endswith("Z"):
+                if isinstance(iso, str) and iso.endswith("Z"):
                     dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
                     pub_rfc = to_rfc2822(dt.astimezone(tz=None).replace(tzinfo=None))
-                else:
+                elif isinstance(iso, str):
                     dt = datetime.fromisoformat(iso)
                     pub_rfc = to_rfc2822(dt.replace(tzinfo=None))
             except Exception:
