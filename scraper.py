@@ -3,52 +3,52 @@
 Generator statycznego RSS dla epiotrkow.pl hostowany na GitHub Pages.
 Uruchamiany co godzinę przez GitHub Actions.
 
-Funkcje:
-- Zbiera linki ze wszystkich selektorów (pełna lista artykułów).
-- Dodaje obrazek: <enclosure>, <media:content>, <media:thumbnail>.
-- Dociąga z podstrony artykułu datę publikacji i LEAD (z kilku akapitów),
-  a lead wstrzykuje do <description> razem z miniaturą <img>.
-- Fallbacki na teasery ładowane JS-em: JSON-LD (Article/NewsArticle), AMP,
-  oraz alternatywnie wersja /galeria/ dla tego samego ID.
+Kolejność pozyskania treści:
+  JSON-LD → AMP (rel + heurystyki) → klasyczne akapity → /galeria → trafilatura
+Do opisu <description> wstrzykujemy <img> (miniaturę) + lead (do ~800 znaków).
 """
 
 import re
 import sys
 import time
 import json
+import html
 import hashlib
 from datetime import datetime
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse, urlunparse, parse_qsl, urlencode
 
 import requests
 from bs4 import BeautifulSoup
+import trafilatura
 
 SITE = "https://epiotrkow.pl"
 
-# Strony: p1 = /news/, p2..p20 = /news/wydarzenia-pX (zwiększ zakres, jeśli chcesz)
+# Strony: p1 = /news/, p2..p20 = /news/wydarzenia-pX
 SOURCE_URLS = [f"{SITE}/news/"] + [f"{SITE}/news/wydarzenia-p{i}" for i in range(2, 21)]
 
-FEED_TITLE = "epiotrkow.pl – Wydarzenia"
+FEED_TITLE = "epiotrkow.pl – Wydarzenia v2"
 FEED_LINK  = f"{SITE}/news/"
 FEED_DESC  = "Automatyczny RSS z list newsów epiotrkow.pl."
 
-# Selektory, z których zbieramy linki (agregujemy ze wszystkich)
 ARTICLE_LINK_SELECTORS = [
-    ".tn-img a[href^='/news/']",      # duży kafel
-    ".bg-white a[href^='/news/']",    # kafelki z h5.tn-title
-    "a[href^='/news/']"               # fallback
+    ".tn-img a[href^='/news/']",
+    ".bg-white a[href^='/news/']",
+    "a[href^='/news/']",
 ]
 
-# tylko prawdziwe artykuły (slug,ID)
 ID_LINK = re.compile(r"^/news/.+,\d+$")
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (+https://github.com/) RSS static builder"}
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (+https://github.com/) RSS static builder",
+    "Accept-Language": "pl-PL,pl;q=0.9,en;q=0.8"
+}
 
-# ile pozycji w RSS
 MAX_ITEMS = 500
+DETAIL_LIMIT = 500          # ile artykułów wzbogacamy o datę/lead
+LEAD_MAX_CHARS = 800        # docelowa długość leada
+LEAD_MIN_GOOD = 160         # minimalna długość, by uznać lead za „wystarczający”
 
-# ile artykułów wzbogacać o datę/lead (żeby workflow nie przekraczał limitów czasu)
-DETAIL_LIMIT = 300
+# --- pomocnicze ---
 
 def guess_mime(url: str) -> str:
     if not url:
@@ -60,14 +60,13 @@ def guess_mime(url: str) -> str:
     return "image/*"
 
 def find_image_url(a: BeautifulSoup, site_base: str) -> str | None:
-    """Znajdź obrazek powiązany z kafelkiem."""
     # 1) w tym samym <a>
     img = a.find("img")
     if img:
         src = img.get("data-src") or img.get("src")
         if src and not src.startswith("data:"):
             return urljoin(site_base, src)
-    # 2) do góry maks. 4 poziomy i szukaj <img> wewnątrz kontenera
+    # 2) w rodzicach
     parent = a
     for _ in range(4):
         parent = parent.parent
@@ -78,7 +77,7 @@ def find_image_url(a: BeautifulSoup, site_base: str) -> str | None:
             src = img.get("data-src") or img.get("src")
             if src and not src.startswith("data:"):
                 return urljoin(site_base, src)
-    # 3) fallback: najbliższy <img> po tym węźle
+    # 3) najbliższy następny <img>
     sib_img = a.find_next("img")
     if sib_img:
         src = sib_img.get("data-src") or sib_img.get("src")
@@ -86,7 +85,6 @@ def find_image_url(a: BeautifulSoup, site_base: str) -> str | None:
             return urljoin(site_base, src)
     return None
 
-# Miesiące PL (do parsowania daty tekstowej)
 PL_MONTHS = {
     "stycznia": 1, "lutego": 2, "marca": 3, "kwietnia": 4, "maja": 5, "czerwca": 6,
     "lipca": 7, "sierpnia": 8, "września": 9, "wrzesnia": 9, "października": 10,
@@ -94,38 +92,31 @@ PL_MONTHS = {
 }
 
 def to_rfc2822(dt: datetime) -> str:
-    # Format RFC 2822 w UTC (dla RSS OK)
     return dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
 
 def parse_polish_date(text: str) -> str | None:
-    """np. 'niedz., 28 września 2025' → RFC 2822."""
     if not text:
         return None
     m = re.search(r"(\d{1,2})\s+([A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+)\s+(\d{4})", text, re.IGNORECASE)
     if not m:
         return None
-    day = int(m.group(1))
-    month_name = m.group(2).lower()
-    year = int(m.group(3))
+    day = int(m.group(1)); month_name = m.group(2).lower(); year = int(m.group(3))
     month = PL_MONTHS.get(month_name)
     if not month:
         return None
     try:
-        dt = datetime(year, month, day, 12, 0, 0)  # godzina domyślna
+        dt = datetime(year, month, day, 12, 0, 0)
         return to_rfc2822(dt)
     except Exception:
         return None
 
-# --- LEAD budowany z wielu akapitów ---
 LEAD_SELECTORS = [
-    # najbardziej precyzyjne
     "[itemprop='articleBody'] p",
     ".news-body p",
     ".news-content p",
     ".article-body p",
     ".article-content p",
     ".entry-content p",
-    # ogólne kontenery
     "article .content p",
     "article p",
     ".post-content p",
@@ -133,8 +124,7 @@ LEAD_SELECTORS = [
     ".content p",
 ]
 
-def build_lead_from_paras(soup: BeautifulSoup, max_chars: int = 800) -> str | None:
-    """Zbuduj lead z kilku pierwszych akapitów (do max_chars), przytnij na granicy wyrazu."""
+def build_lead_from_paras(soup: BeautifulSoup, max_chars: int = LEAD_MAX_CHARS) -> str | None:
     paras = []
     for sel in LEAD_SELECTORS:
         found = soup.select(sel)
@@ -142,14 +132,14 @@ def build_lead_from_paras(soup: BeautifulSoup, max_chars: int = 800) -> str | No
             paras = found
             break
     if not paras:
-        # super-fallback: weź po prostu wszystkie <p> w <main> lub body (ryzyko, ale lepsze niż nic)
         paras = soup.select("main p") or soup.find_all("p")
 
     chunks, total = [], 0
     for p in paras:
         t = p.get_text(" ", strip=True)
+        t = html.unescape(t)
         if not t or len(t) < 30:
-            continue  # pomiń bardzo krótkie/ozdobne akapity
+            continue
         chunks.append(t)
         total += len(t) + 1
         if total >= max_chars:
@@ -164,7 +154,6 @@ def build_lead_from_paras(soup: BeautifulSoup, max_chars: int = 800) -> str | No
     return lead
 
 def extract_from_jsonld(soup: BeautifulSoup) -> tuple[str | None, str | None]:
-    """Spróbuj wyciągnąć datę i opis/treść z JSON-LD (Article/NewsArticle)."""
     pub_rfc, lead = None, None
     for tag in soup.find_all("script", type="application/ld+json"):
         raw = tag.string or (tag.contents[0] if tag.contents else "")
@@ -174,7 +163,6 @@ def extract_from_jsonld(soup: BeautifulSoup) -> tuple[str | None, str | None]:
             data = json.loads(raw)
         except Exception:
             continue
-
         candidates = data if isinstance(data, list) else [data]
         for obj in candidates:
             if not isinstance(obj, dict):
@@ -182,12 +170,9 @@ def extract_from_jsonld(soup: BeautifulSoup) -> tuple[str | None, str | None]:
             typ = obj.get("@type") or obj.get("type")
             if isinstance(typ, list):
                 typ = next((t for t in typ if isinstance(t, str)), None)
-            if not typ or not isinstance(typ, str):
+            if not (isinstance(typ, str) and ("Article" in typ or "NewsArticle" in typ)):
                 continue
-            if "Article" not in typ and "NewsArticle" not in typ:
-                continue
-
-            # data publikacji
+            # data
             dp = obj.get("datePublished") or obj.get("dateCreated")
             if dp and not pub_rfc:
                 try:
@@ -199,48 +184,71 @@ def extract_from_jsonld(soup: BeautifulSoup) -> tuple[str | None, str | None]:
                         pub_rfc = to_rfc2822(dt.replace(tzinfo=None))
                 except Exception:
                     pass
-
-            # opis / treść
+            # opis/treść
             desc = obj.get("description")
             body = obj.get("articleBody")
             txt = (body or desc)
             if txt and not lead:
-                # przyjmij już od 40 znaków (bywa krótkie, ale często pełniejsze niż meta)
-                clean = " ".join(str(txt).split())
+                clean = html.unescape(" ".join(str(txt).split()))
                 if len(clean) >= 40:
                     lead = clean
-
         if pub_rfc or lead:
             break
     return pub_rfc, lead
 
-def try_gallery_variant(url: str) -> tuple[str | None, str | None]:
-    """
-    Jeśli lead jest zbyt krótki na stronie artykułu, spróbuj wersji /galeria/ dla tego samego ID.
-    Przykład:
-      /news/slug,59777  ->  /galeria/slug,59777
-    """
+def trafilatura_lead(url: str, max_chars: int = LEAD_MAX_CHARS) -> str | None:
+    try:
+        downloaded = trafilatura.fetch_url(url)
+        if not downloaded:
+            return None
+        text = trafilatura.extract(
+            downloaded,
+            include_comments=False,
+            favor_recall=True,
+            with_metadata=False
+        )
+        if not text:
+            return None
+        text = html.unescape(" ".join(text.split()))
+        if len(text) > max_chars:
+            cut = text[:max_chars]
+            cut = cut.rsplit(" ", 1)[0] if " " in cut else cut
+            text = cut.rstrip() + "…"
+        return text if len(text) >= 120 else None
+    except Exception as e:
+        print(f"[WARN] trafilatura failed for {url}: {e}", file=sys.stderr)
+        return None
+
+def try_amp_variants(url: str) -> list[str]:
+    """Wygeneruj kandydatów AMP, nawet gdy brak rel=amphtml."""
+    cand = set()
+    def with_query(u, kv):
+        pr = urlparse(u)
+        q = dict(parse_qsl(pr.query))
+        q.update(kv)
+        return urlunparse(pr._replace(query=urlencode(q)))
+    cand.add(with_query(url, {"amp": ""}))
+    cand.add(with_query(url, {"amp": "1"}))
+    cand.add(with_query(url, {"output": "amp"}))
+    pr = urlparse(url)
+    if not pr.path.endswith("/amp"):
+        cand.add(urlunparse(pr._replace(path=pr.path.rstrip("/") + "/amp")))
+    return [c for c in cand if c != url]
+
+def try_gallery_variant(url: str) -> str | None:
+    """Dla /news/slug,ID -> /galeria/slug,ID"""
     try:
         if "/news/" not in url or "," not in url:
-            return None, None
+            return None
         before, after = url.split("/news/", 1)
-        slug_id = after  # slug,59777
-        gal_url = before + "/galeria/" + slug_id
-        r = requests.get(gal_url, headers=HEADERS, timeout=25)
-        r.raise_for_status()
-        soup = BeautifulSoup(r.text, "lxml")
-        lead = build_lead_from_paras(soup, max_chars=800)
-        # data z JSON-LD jeśli jest
-        pub, _ = extract_from_jsonld(soup)
-        return pub, lead
-    except Exception as e:
-        print(f"[WARN] gallery fallback failed: {e}", file=sys.stderr)
-        return None, None
+        return before + "/galeria/" + after
+    except Exception:
+        return None
+
+# --- główne pobranie szczegółów ---
 
 def fetch_article_details(url: str) -> tuple[str | None, str | None]:
-    """Zwraca (pubDate_rfc2822, lead_txt) z podstrony artykułu,
-    próbując: JSON-LD → AMP → klasyczny HTML → /galeria/.
-    """
+    """Zwraca (pubDate_rfc2822, lead_txt) z podstrony artykułu."""
     def _get(url_):
         r = requests.get(url_, headers=HEADERS, timeout=25)
         r.raise_for_status()
@@ -255,32 +263,38 @@ def fetch_article_details(url: str) -> tuple[str | None, str | None]:
         print(f"[WARN] Nie udało się pobrać artykułu: {url} -> {e}", file=sys.stderr)
         return None, None
 
-    # 1) JSON-LD (najpierw)
+    # 1) JSON-LD
     j_pub, j_lead = extract_from_jsonld(soup)
     if j_pub:
         pub_rfc = j_pub
     if j_lead:
         lead = j_lead
 
-    # 2) AMP (jeśli wciąż brakuje dobrego leada lub daty)
-    if not pub_rfc or not lead or len(lead) < 120:
-        amp = soup.find("link", rel=lambda v: v and "amphtml" in v.lower())
-        if amp and amp.get("href"):
-            try:
-                amp_url = urljoin(url, amp["href"])
-                amp_soup = _get(amp_url)
-                if not pub_rfc:
-                    a_pub, _ = extract_from_jsonld(amp_soup)
-                    if a_pub:
-                        pub_rfc = a_pub
-                if not lead or len(lead) < 120:
-                    a_lead = build_lead_from_paras(amp_soup, max_chars=800)
-                    if a_lead and len(a_lead) >= 120:
-                        lead = a_lead
-            except Exception as e:
-                print(f"[WARN] AMP fetch failed: {amp_url} -> {e}", file=sys.stderr)
+    # 2) AMP (link rel oraz heurystyki)
+    amp_hrefs = []
+    amp_tag = soup.find("link", rel=lambda v: v and "amphtml" in v.lower())
+    if amp_tag and amp_tag.get("href"):
+        amp_hrefs.append(urljoin(url, amp_tag["href"]))
+    amp_hrefs.extend(try_amp_variants(url))
 
-    # 3) Klasyczny HTML – meta + akapity (fallback)
+    for amp_url in amp_hrefs:
+        if lead and pub_rfc and len(lead) >= LEAD_MIN_GOOD:
+            break
+        try:
+            amp_soup = _get(amp_url)
+        except Exception as e:
+            print(f"[WARN] AMP fetch failed: {amp_url} -> {e}", file=sys.stderr)
+            continue
+        if not pub_rfc:
+            a_pub, _ = extract_from_jsonld(amp_soup)
+            if a_pub:
+                pub_rfc = a_pub
+        if not lead or len(lead) < LEAD_MIN_GOOD:
+            a_lead = build_lead_from_paras(amp_soup, max_chars=LEAD_MAX_CHARS)
+            if a_lead and len(a_lead) >= LEAD_MIN_GOOD:
+                lead = a_lead
+
+    # 3) Klasyczny HTML – meta + akapity
     if not pub_rfc:
         meta = soup.find("meta", attrs={"property": "article:published_time"}) \
             or soup.find("meta", attrs={"name": "article:published_time"}) \
@@ -302,28 +316,42 @@ def fetch_article_details(url: str) -> tuple[str | None, str | None]:
             if date_el:
                 pub_rfc = parse_polish_date(date_el.get_text(" ", strip=True))
 
-    if not lead or len(lead) < 120:
-        # Spróbuj klasycznych paragrafów z głównej strony
-        built = build_lead_from_paras(soup, max_chars=800)
-        if built and len(built) >= 120:
+    if not lead or len(lead) < LEAD_MIN_GOOD:
+        built = build_lead_from_paras(soup, max_chars=LEAD_MAX_CHARS)
+        if built and len(built) >= LEAD_MIN_GOOD:
             lead = built
 
-    # 4) Ostateczny fallback: wersja /galeria/ dla tego samego ID
-    if not lead or len(lead) < 120:
-        g_pub, g_lead = try_gallery_variant(url)
-        if g_pub and not pub_rfc:
-            pub_rfc = g_pub
-        if g_lead and len(g_lead) >= 120:
-            lead = g_lead
+    # 4) GALERIA (często przy artykułach z „ZDJĘCIA”)
+    if not lead or len(lead) < LEAD_MIN_GOOD:
+        gal_url = try_gallery_variant(url)
+        if gal_url:
+            try:
+                gal_soup = _get(gal_url)
+                if not pub_rfc:
+                    g_pub, _ = extract_from_jsonld(gal_soup)
+                    if g_pub:
+                        pub_rfc = g_pub
+                g_lead = build_lead_from_paras(gal_soup, max_chars=LEAD_MAX_CHARS)
+                if g_lead and len(g_lead) >= LEAD_MIN_GOOD:
+                    lead = g_lead
+            except Exception as e:
+                print(f"[WARN] gallery fetch failed: {gal_url} -> {e}", file=sys.stderr)
 
-    # lekkie czyszczenie (uniknij ucięcia w pół zdania/wyrazu)
+    # 5) TRAFILATURA (ostatnia deska ratunku)
+    if not lead or len(lead) < LEAD_MIN_GOOD:
+        t_lead = trafilatura_lead(url, max_chars=LEAD_MAX_CHARS)
+        if t_lead and len(t_lead) >= LEAD_MIN_GOOD:
+            lead = t_lead
+
+    # czyszczenie
     if lead:
         lead = " ".join(lead.split())
         if len(lead) < 80 and not re.search(r"[.!?…]$", lead):
-            # bardzo krótki teaser bez interpunkcji na końcu – odrzuć
             lead = None
 
     return pub_rfc, lead
+
+# --- pobranie listy i budowa RSS ---
 
 def fetch_items():
     items = []
@@ -337,7 +365,6 @@ def fetch_items():
 
         soup = BeautifulSoup(r.text, "lxml")
 
-        # zbierz ze wszystkich selektorów i deduplikuj po href
         anchors = []
         for sel in ARTICLE_LINK_SELECTORS:
             anchors.extend(soup.select(sel))
@@ -346,9 +373,7 @@ def fetch_items():
         clean = []
         for a in anchors:
             href = a.get("href")
-            if not href:
-                continue
-            if href in seen_href:
+            if not href or href in seen_href:
                 continue
             seen_href.add(href)
             clean.append(a)
@@ -357,44 +382,41 @@ def fetch_items():
             href = a.get("href")
             if not ID_LINK.match(href):
                 continue
-
             link = urljoin(SITE, href)
 
-            # Tytuł — próby w kolejności
+            # tytuł
             title_el = a.select_one(".tn-title")
             if title_el:
                 title = title_el.get_text(" ", strip=True)
             else:
                 h5 = a.select_one("h5.tn-title")
                 title = h5.get_text(" ", strip=True) if h5 else ""
-
             if not title:
                 title = a.get_text(" ", strip=True)
-
             if not title:
                 sibling = a.find_next(class_="tn-title")
                 if sibling:
                     title = sibling.get_text(" ", strip=True)
-
             if not title:
                 img_in_a = a.find("img")
                 if img_in_a and img_in_a.get("alt"):
                     title = img_in_a["alt"].strip()
-
             if not title:
                 title = "Bez tytułu"
 
-            # Obrazek (opcjonalny)
             img_url = find_image_url(a, SITE)
             mime = guess_mime(img_url) if img_url else None
 
             guid = hashlib.sha1(link.encode("utf-8")).hexdigest()
             items.append({
-                "title": title, "link": link, "guid": guid,
-                "image": img_url, "mime": mime
+                "title": html.unescape(title),
+                "link": link,
+                "guid": guid,
+                "image": img_url,
+                "mime": mime
             })
 
-    # deduplikacja po linku (zachowaj kolejność)
+    # deduplikacja po linku
     seen, unique = set(), []
     for it in items:
         if it["link"] in seen:
@@ -402,7 +424,7 @@ def fetch_items():
         seen.add(it["link"])
         unique.append(it)
 
-    # dograj szczegóły (data/lead) dla pierwszych DETAIL_LIMIT
+    # szczegóły
     for idx, it in enumerate(unique):
         if idx >= DETAIL_LIMIT:
             break
@@ -431,19 +453,12 @@ def build_rss(items):
 """
     body = []
     for it in items:
-        # pubDate: z artykułu, a jeśli brak – data builda
         pubdate = it.get("pubDate", build_date)
-
-        # description: miniatura + lead/tytuł
-        lead_text = it.get("lead") or it["title"]
-        img_html = ""
-        if it.get("image"):
-            img_html = f'<p><img src="{it["image"]}" alt="miniatura"/></p>'
+        lead_text = html.unescape(it.get("lead") or it["title"])
+        img_html = f'<p><img src="{it["image"]}" alt="miniatura"/></p>' if it.get("image") else ""
         desc_html = f"{img_html}<p>{lead_text}</p>"
 
-        enclosure = ""
-        media = ""
-        media_thumb = ""
+        enclosure = media = media_thumb = ""
         if it.get("image"):
             enclosure   = f'\n  <enclosure url="{it["image"]}" type="{it.get("mime","image/*")}" />'
             media       = f'\n  <media:content url="{it["image"]}" medium="image" />'
@@ -457,6 +472,7 @@ def build_rss(items):
   <pubDate>{pubdate}</pubDate>
   <description><![CDATA[{desc_html}]]></description>{enclosure}{media}{media_thumb}
 </item>""")
+
     tail = "\n</channel>\n</rss>\n"
     return head + "".join(body) + tail
 
