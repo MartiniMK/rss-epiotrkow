@@ -5,7 +5,7 @@
 <title>epiotrkow.pl – Wydarzenia v3</title>
 <link>https://epiotrkow.pl/news/</link>
 <description>Automatyczny RSS z list newsów epiotrkow.pl.</description>
-<lastBuildDate>Fri, 19 Dec 2025 13:46:45 +0000</lastBuildDate>
+<lastBuildDate>Fri, 19 Dec 2025 14:38:25 +0000</lastBuildDate>
 <ttl>60</ttl>
 
 <item>
@@ -59,6 +59,16 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251219_69450be05fd51.webp" />
 </item>
 <item>
+  <title><![CDATA[Wymachiwał nożem przy centrum przesiadkowym. Został zatrzymany ZDJĘCIA]]></title>
+  <link>https://epiotrkow.pl/news/mezczyzna-wymachiwal-nozem-przy-centrum-przesiadkowym-interweniowala-policja,60740</link>
+  <guid isPermaLink="false">1f6ba9043d8a5d632bf4046525ff523a57cd8e08</guid>
+  <pubDate>Thu, 18 Dec 2025 17:54:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251218_6944318e6f3bb.webp" alt="miniatura"/></p><p>Do niebezpiecznego zdarzenia doszło na terenie powiatowego centrum przesiadkowego przy ulicy POW, w rejonie dworca PKS. Świadkowie informowali o mężczyźnie, który zachowywał się agresywnie i wymachiwał nożem w miejscu, gdzie przebywało wielu pasażerów. Sytuacja była na tyle poważna, że dyżurny skierował na miejsce kilka patroli policji. Funkcjonariusze szybko otoczyli mężczyznę i obezwładnili go, nie dopuszczając do tragedii. Jak udało się nam ustalić, nikomu nic się nie stało. Po zatrzymaniu mężczyzna został przewieziony do szpitala. Z informacji, do których dotarła nasza redakcja, wynika, że jego zachowanie było związane z chorobą psychiczną. Obecnie znajduje się on pod opieką lekarzy.</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251218_6944318e6f3bb.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251218_6944318e6f3bb.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251218_6944318e6f3bb.webp" />
+</item>
+<item>
   <title><![CDATA[Piotrkowski miś znów dostępny. Od 19 grudnia można korzystać z ławeczki]]></title>
   <link>https://epiotrkow.pl/news/swiateczny-mis-naprawiony-od-19-grudnia-ponownie-dostepny,60745</link>
   <guid isPermaLink="false">4038b757360ddbebbf7a27b39341ef768556c815</guid>
@@ -87,16 +97,6 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251219_6944ea719ac9f.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251219_6944ea719ac9f.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251219_6944ea719ac9f.webp" />
-</item>
-<item>
-  <title><![CDATA[Wymachiwał nożem przy centrum przesiadkowym. Został zatrzymany ZDJĘCIA]]></title>
-  <link>https://epiotrkow.pl/news/mezczyzna-wymachiwal-nozem-przy-centrum-przesiadkowym-interweniowala-policja,60740</link>
-  <guid isPermaLink="false">1f6ba9043d8a5d632bf4046525ff523a57cd8e08</guid>
-  <pubDate>Thu, 18 Dec 2025 17:54:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251218_6944318e6f3bb.webp" alt="miniatura"/></p><p>Do niebezpiecznego zdarzenia doszło na terenie powiatowego centrum przesiadkowego przy ulicy POW, w rejonie dworca PKS. Świadkowie informowali o mężczyźnie, który zachowywał się agresywnie i wymachiwał nożem w miejscu, gdzie przebywało wielu pasażerów. Sytuacja była na tyle poważna, że dyżurny skierował na miejsce kilka patroli policji. Funkcjonariusze szybko otoczyli mężczyznę i obezwładnili go, nie dopuszczając do tragedii. Jak udało się nam ustalić, nikomu nic się nie stało. Po zatrzymaniu mężczyzna został przewieziony do szpitala. Z informacji, do których dotarła nasza redakcja, wynika, że jego zachowanie było związane z chorobą psychiczną. Obecnie znajduje się on pod opieką lekarzy.</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251218_6944318e6f3bb.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251218_6944318e6f3bb.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251218_6944318e6f3bb.webp" />
 </item>
 <item>
   <title><![CDATA[Dużo sportowych emocji w przedświąteczny weekend. Sprawdź co się będzie działo]]></title>
