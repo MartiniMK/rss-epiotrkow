@@ -5,7 +5,7 @@
 <title>epiotrkow.pl – Wydarzenia v3</title>
 <link>https://epiotrkow.pl/news/</link>
 <description>Automatyczny RSS z list newsów epiotrkow.pl.</description>
-<lastBuildDate>Mon, 05 Jan 2026 17:41:20 +0000</lastBuildDate>
+<lastBuildDate>Mon, 05 Jan 2026 18:51:33 +0000</lastBuildDate>
 <ttl>60</ttl>
 
 <item>
@@ -27,16 +27,6 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bbefa7dad6.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bbefa7dad6.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bbefa7dad6.webp" />
-</item>
-<item>
-  <title><![CDATA[Policja poszukuje 14-letniej Julii Chłapińskiej z Piotrkowa Trybunalskiego]]></title>
-  <link>https://epiotrkow.pl/news/policja-poszukuje-14-letniej-julii-chlapinskiej-z-piotrkowa-trybunalskiego,60905</link>
-  <guid isPermaLink="false">6e05e66813159a7dd30bec9f8ef002cc002c1b22</guid>
-  <pubDate>Mon, 05 Jan 2026 14:14:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bb94bd1e09.webp" alt="miniatura"/></p><p>włosy: długie, do ramion, koloru rudego znaki szczególne: blizna na prawym łokciu białe buty sportowe z ciemnym logo Nike Policja apeluje do wszystkich osób, które mogą posiadać jakiekolwiek informacje mogące pomóc w ustaleniu miejsca pobytu dziewczynki , o pilny kontakt z najbliższą jednostką Policji. Telefon do KMP Piotrków Trybunalski: 47 846 14 62 Numer alarmowy: 112</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bb94bd1e09.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bb94bd1e09.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bb94bd1e09.webp" />
 </item>
 <item>
   <title><![CDATA[Koncert Noworoczny w Czarnocinie – muzyczne rozpoczęcie 2026 roku]]></title>
@@ -197,6 +187,16 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260103_6958f8f990f32.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260103_6958f8f990f32.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260103_6958f8f990f32.webp" />
+</item>
+<item>
+  <title><![CDATA[Policja poszukuje 14-letniej Julii Chłapińskiej z Piotrkowa Trybunalskiego]]></title>
+  <link>https://epiotrkow.pl/news/policja-poszukuje-14-letniej-julii-chlapinskiej-z-piotrkowa-trybunalskiego,60905</link>
+  <guid isPermaLink="false">6e05e66813159a7dd30bec9f8ef002cc002c1b22</guid>
+  <pubDate>Mon, 05 Jan 2026 14:14:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bb94bd1e09.webp" alt="miniatura"/></p><p>włosy: długie, do ramion, koloru rudego znaki szczególne: blizna na prawym łokciu białe buty sportowe z ciemnym logo Nike Policja apeluje do wszystkich osób, które mogą posiadać jakiekolwiek informacje mogące pomóc w ustaleniu miejsca pobytu dziewczynki , o pilny kontakt z najbliższą jednostką Policji. Telefon do KMP Piotrków Trybunalski: 47 846 14 62 Numer alarmowy: 112</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bb94bd1e09.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bb94bd1e09.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260105_695bb94bd1e09.webp" />
 </item>
 <item>
   <title><![CDATA[Taneczna inauguracja 2026 roku Stowarzyszenia Pałacyk. Pełna sala, dobra energia i radość bez alkoholu]]></title>
