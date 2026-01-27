@@ -5,18 +5,28 @@
 <title>epiotrkow.pl – Wydarzenia v3</title>
 <link>https://epiotrkow.pl/news/</link>
 <description>Automatyczny RSS z list newsów epiotrkow.pl.</description>
-<lastBuildDate>Tue, 27 Jan 2026 09:53:40 +0000</lastBuildDate>
+<lastBuildDate>Tue, 27 Jan 2026 10:46:33 +0000</lastBuildDate>
 <ttl>60</ttl>
 
+<item>
+  <title><![CDATA[TIR uderzył w bariery na S8. Utrudnienia w kierunku Warszawy]]></title>
+  <link>https://epiotrkow.pl/news/ciezarowka-uderzyla-w-bariery-na-s8-utrudnienia-w-rejonie-wolborza,61170</link>
+  <guid isPermaLink="false">ffdfbf7f9dafe073151df2f1b428cc4ca36c3244</guid>
+  <pubDate>Tue, 27 Jan 2026 10:35:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260127_697887b77ab22.webp" alt="miniatura"/></p><p>– Pojazd ciężarowy marki Renault, w wyniku wystrzału opony, uderzył w bariery – informuje młodsza aspirant Edyta Daroch z Komendy Miejskiej Policji w Piotrkowie Trybunalskim. Na miejscu pracowali strażacy, policjanci i służby drogowe. Kierowcy musieli liczyć się ze spowolnieniem przejazdu w kierunku Warszawy. Na szczęście w wyniku kolizji nikt nie odniósł obrażeń. Policja apeluje do kierowców o zachowanie ostrożności, szczególnie podczas jazdy z większymi prędkościami oraz w przypadku awarii technicznych pojazdów.</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260127_697887b77ab22.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260127_697887b77ab22.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260127_697887b77ab22.webp" />
+</item>
 <item>
   <title><![CDATA[Zakończono I etap budowy Świetlicy Wiejskiej w Twardosławicach]]></title>
   <link>https://epiotrkow.pl/news/zakonczono-i-etap-budowy-swietlicy-wiejskiej-w-twardoslawicach,61169</link>
   <guid isPermaLink="false">babf95e815fb106e8001569827a638f15050375c</guid>
   <pubDate>Tue, 27 Jan 2026 09:23:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260127_69787694304e6.webp" alt="miniatura"/></p><p>Inwestycja została zrealizowana w odpowiedzi na potrzeby lokalnej społeczności. W ramach pierwszego etapu wykonano prace przygotowawcze, w tym roboty ziemne, przygotowanie podłoża, wykonanie fundamentów, wzniesienie ścian konstrukcyjnych oraz montaż stropu. Docelowo w Twardosławicach powstanie nowoczesny, parterowy budynek o powierzchni użytkowej 275,52 m². Obiekt zostanie wyposażony w salę główną, kuchnię, zaplecze sanitarne oraz pomieszczenia socjalne. Projekt zakłada dostosowanie budynku do potrzeb osób z niepełnosprawnościami oraz zastosowanie rozwiązań proekologicznych, w tym systemów ogrzewania przyjaznych środowisku. Celem realizacji inwestycji jest stworzenie przestrzeni sprzyjającej integracji społecznej oraz aktywizacji mieszkańców sołectwa Twardosławice. W miejscowości funkcjonuje Koło Gospodyń Wiejskich, aktywnie uczestniczące w wydarzeniach kulturalnych i charytatywnych. Nowa świetlica będzie miejscem organizacji imprez kulturalnych, spotkań integracyjnych oraz zajęć dla…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260127_69787694304e6.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260127_69787694304e6.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260127_69787694304e6.webp" />
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260127_69787694304e6.webp" alt="miniatura"/></p><p>Inwestycja została zrealizowana w odpowiedzi na potrzeby lokalnej społeczności. W ramach pierwszego etapu wykonano prace przygotowawcze, w tym roboty ziemne, przygotowanie podłoża, wykonanie fundamentów, wzniesienie ścian konstrukcyjnych oraz montaż stropu. Docelowo w Twardosławicach powstanie nowoczesny, parterowy budynek o powierzchni użytkowej 275,52 m². Obiekt zostanie wyposażony w salę główną, kuchnię, zaplecze sanitarne oraz pomieszczenia socjalne. Projekt zakłada dostosowanie budynku do potrzeb osób z niepełnosprawnościami oraz zastosowanie rozwiązań proekologicznych, w tym systemów ogrzewania przyjaznych środowisku. Celem realizacji inwestycji jest stworzenie przestrzeni sprzyjającej integracji społecznej oraz aktywizacji mieszkańców sołectwa Twardosławice. W miejscowości funkcjonuje Koło Gospodyń Wiejskich, aktywnie uczestniczące w wydarzeniach kulturalnych i charytatywnych. Nowa świetlica będzie miejscem organizacji imprez kulturalnych, spotkań integracyjnych oraz zajęć dla…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260127_69787694304e6.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260127_69787694304e6.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260127_69787694304e6.webp" />
 </item>
 <item>
   <title><![CDATA[Bełchatów usuwa porzucone wraki samochodowe]]></title>
@@ -323,20 +333,20 @@
   <link>https://epiotrkow.pl/news/jaskra-nie-boli-ale-moze-odebrac-wzrok-w-piotrkowie-skutecznie-lecza-i-operuja-pacjentow,61137</link>
   <guid isPermaLink="false">a743ffa71a209d3b2d93bc8a8a00932dea0dfc68</guid>
   <pubDate>Fri, 23 Jan 2026 13:20:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260123_6973618180b9e.webp" alt="miniatura"/></p><p>Jak podkreślała dr n. med. Małgorzata Stawska, kierownik Oddziału Okulistycznego, jaskra to choroba, która wymaga systematycznego leczenia i stałej kontroli. Jaskra nie boli i bardzo długo nie daje objawów. Nie zabiera ostrości wzroku, tylko stopniowo zawęża pole widzenia. Pacjent często orientuje się, że coś jest nie tak dopiero wtedy, gdy choroba jest już zaawansowana. Dlatego tak ważne są regularne badania, nawet jeśli subiektywnie wydaje się nam, że widzimy dobrze - mówiła dr Małgorzata Stawska. W piotrkowskim szpitalu stosowany jest pełen wachlarz metod leczenia, od farmakoterapii, przez lasery, po zabiegi operacyjne. Jaskra jest chorobą nieuleczalną, ale to nie znaczy, że jesteśmy wobec niej bezradni. Leczymy ją po to, aby zachować widzenie. Krople, leczenie laserowe i operacje pozwalają skutecznie spowolnić postęp choroby i uchronić pacjenta przed ślepotą - podkreślała kierownik oddziału. Oddział okulistyczny SSW w Piotrkowie Trybunalskim wykonuje rocznie około 1500 operacji…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260123_6973618180b9e.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260123_6973618180b9e.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260123_6973618180b9e.webp" />
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260123_6973618180b9e.webp" alt="miniatura"/></p><p>Jak podkreślała dr n. med. Małgorzata Stawska, kierownik Oddziału Okulistycznego, jaskra to choroba, która wymaga systematycznego leczenia i stałej kontroli. Jaskra nie boli i bardzo długo nie daje objawów. Nie zabiera ostrości wzroku, tylko stopniowo zawęża pole widzenia. Pacjent często orientuje się, że coś jest nie tak dopiero wtedy, gdy choroba jest już zaawansowana. Dlatego tak ważne są regularne badania, nawet jeśli subiektywnie wydaje się nam, że widzimy dobrze - mówiła dr Małgorzata Stawska. W piotrkowskim szpitalu stosowany jest pełen wachlarz metod leczenia, od farmakoterapii, przez lasery, po zabiegi operacyjne. Jaskra jest chorobą nieuleczalną, ale to nie znaczy, że jesteśmy wobec niej bezradni. Leczymy ją po to, aby zachować widzenie. Krople, leczenie laserowe i operacje pozwalają skutecznie spowolnić postęp choroby i uchronić pacjenta przed ślepotą - podkreślała kierownik oddziału. Oddział okulistyczny SSW w Piotrkowie Trybunalskim wykonuje rocznie około 1500 operacji…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260123_6973618180b9e.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260123_6973618180b9e.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260123_6973618180b9e.webp" />
 </item>
 <item>
   <title><![CDATA[Wirtualna strzelnica w piotrkowskim IV LO już działa]]></title>
   <link>https://epiotrkow.pl/news/nowoczesna-wirtualna-strzelnica-w-iv-lo-inwestycja-w-bezpieczenstwo-i-edukacje,61133</link>
   <guid isPermaLink="false">b7a698b144ed0e854c33749e8a7e4ead490850fc</guid>
   <pubDate>Fri, 23 Jan 2026 08:40:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260123_69732c788841e.webp" alt="miniatura"/></p><p>Strzelnica mieści się w zaadaptowanym pomieszczeniu szkolnym, które wcześniej pełniło funkcję kotłowni i przez lata było nieużytkowane. Dziś to nowoczesna, multimedialna przestrzeń szkoleniowa oparta na technologii rzeczywistości wirtualnej. Wyposażona została m.in. w projektor symulujący pole walki, system komputerowy oraz repliki broni z laserowymi modułami strzeleckimi. Jednocześnie może z niej korzystać czterech strzelców. Strzał to tak naprawdę sam koniec całego procesu. To wisienka na torcie. Najważniejsze są wszystkie czynności poprzedzające: zasady bezpieczeństwa, właściwe kierowanie bronią, zachowanie się na strzelnicy i budowanie prawidłowych nawyków– podkreśla płk rez. Rafał Lis, opiekun klas wojskowych w IV LO Jak zaznacza, celem zajęć nie jest wyłącznie nauka celnego strzelania, ale przede wszystkim odpowiedzialnego i bezpiecznego posługiwania się bronią. Uczymy młodzież, że broń zawsze traktujemy jak załadowaną, że musi być skierowana w bezpiecznym kierunku. To są…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260123_69732c788841e.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260123_69732c788841e.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260123_69732c788841e.webp" />
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260123_69732c788841e.webp" alt="miniatura"/></p><p>Strzelnica mieści się w zaadaptowanym pomieszczeniu szkolnym, które wcześniej pełniło funkcję kotłowni i przez lata było nieużytkowane. Dziś to nowoczesna, multimedialna przestrzeń szkoleniowa oparta na technologii rzeczywistości wirtualnej. Wyposażona została m.in. w projektor symulujący pole walki, system komputerowy oraz repliki broni z laserowymi modułami strzeleckimi. Jednocześnie może z niej korzystać czterech strzelców. Strzał to tak naprawdę sam koniec całego procesu. To wisienka na torcie. Najważniejsze są wszystkie czynności poprzedzające: zasady bezpieczeństwa, właściwe kierowanie bronią, zachowanie się na strzelnicy i budowanie prawidłowych nawyków– podkreśla płk rez. Rafał Lis, opiekun klas wojskowych w IV LO Jak zaznacza, celem zajęć nie jest wyłącznie nauka celnego strzelania, ale przede wszystkim odpowiedzialnego i bezpiecznego posługiwania się bronią. Uczymy młodzież, że broń zawsze traktujemy jak załadowaną, że musi być skierowana w bezpiecznym kierunku. To są…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260123_69732c788841e.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260123_69732c788841e.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260123_69732c788841e.webp" />
 </item>
 <item>
   <title><![CDATA[Ferie na medal w Tomaszowie Mazowieckim. Nie zabraknie atrakcji! Bezpłatna oferta dla dzieci i młodzieży!]]></title>
@@ -643,20 +653,20 @@
   <link>https://epiotrkow.pl/news/poradnik-bezpieczenstwa-edukuje-czy-straszy,61103</link>
   <guid isPermaLink="false">a1685bd80051fece21234cd1f45fe0ae683abaea</guid>
   <pubDate>Tue, 20 Jan 2026 14:36:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260120_696f88e86c6ff.webp" alt="miniatura"/></p><p>Licząca ponad pięćdziesiąt stron publikacja została przygotowana przez Ministerstwo Obrony Narodowej , Ministerstwo Spraw Wewnętrznych i Administracji oraz Rządowe Centrum Bezpieczeństwa , przy współpracy z ekspertami, samorządami, służbami i organizacjami pozarządowymi. Co tam znajdziemy? W wielkim skrócie praktyczne porady dotyczące tworzenia rodzinnych planów kryzysowych, zasad ewakuacji, rozpoznawania sygnałów alarmowych, jak również listy kontrolne, które pomagają w przygotowaniu zapasów i niezbędnego wyposażenia. To także rozpoznawanie sygnałów alarmowych, przygotowanie plecaka kryzysowego, zabezpieczanie domu, opieka nad zwierzętami, a także informacje o zagrożeniach chemicznych, biologicznych, radiologicznych czy cyberatakach - mówił w Maglu (Strefa Fm Piotrków) dr Piotr Kobzdej, odpowiedzialny za wydawnictwo - Ma też na celu wzmacnianie zaufania i solidarności społecznej i budowanie odporności na współczesne wyzwania. Nie tylko ostrzega przed tym najgorszym wariantem - wojną.…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260120_696f88e86c6ff.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260120_696f88e86c6ff.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260120_696f88e86c6ff.webp" />
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260120_696f88e86c6ff.webp" alt="miniatura"/></p><p>Licząca ponad pięćdziesiąt stron publikacja została przygotowana przez Ministerstwo Obrony Narodowej , Ministerstwo Spraw Wewnętrznych i Administracji oraz Rządowe Centrum Bezpieczeństwa , przy współpracy z ekspertami, samorządami, służbami i organizacjami pozarządowymi. Co tam znajdziemy? W wielkim skrócie praktyczne porady dotyczące tworzenia rodzinnych planów kryzysowych, zasad ewakuacji, rozpoznawania sygnałów alarmowych, jak również listy kontrolne, które pomagają w przygotowaniu zapasów i niezbędnego wyposażenia. To także rozpoznawanie sygnałów alarmowych, przygotowanie plecaka kryzysowego, zabezpieczanie domu, opieka nad zwierzętami, a także informacje o zagrożeniach chemicznych, biologicznych, radiologicznych czy cyberatakach - mówił w Maglu (Strefa Fm Piotrków) dr Piotr Kobzdej, odpowiedzialny za wydawnictwo - Ma też na celu wzmacnianie zaufania i solidarności społecznej i budowanie odporności na współczesne wyzwania. Nie tylko ostrzega przed tym najgorszym wariantem - wojną.…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260120_696f88e86c6ff.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260120_696f88e86c6ff.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260120_696f88e86c6ff.webp" />
 </item>
 <item>
   <title><![CDATA[Ogłoszenie o polowaniu zbiorowym]]></title>
   <link>https://epiotrkow.pl/news/ogloszenie-o-polowaniu-zbiorowym,61101</link>
   <guid isPermaLink="false">c71abff07181dec43b74620302afaf48aeea13f4</guid>
   <pubDate>Tue, 20 Jan 2026 14:01:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260120_696f7ce11faf8.webp" alt="miniatura"/></p><p>W związku z powyższym prosimy mieszkańców oraz osoby przebywające na terenie obwodu o zachowanie szczególnej ostrożności, unikanie wstępu do lasów oraz stosowanie się do oznakowań i poleceń osób prowadzących polowanie. Polowanie odbędzie się zgodnie z obowiązującymi przepisami prawa.</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260120_696f7ce11faf8.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260120_696f7ce11faf8.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260120_696f7ce11faf8.webp" />
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260120_696f7ce11faf8.webp" alt="miniatura"/></p><p>W związku z powyższym prosimy mieszkańców oraz osoby przebywające na terenie obwodu o zachowanie szczególnej ostrożności, unikanie wstępu do lasów oraz stosowanie się do oznakowań i poleceń osób prowadzących polowanie. Polowanie odbędzie się zgodnie z obowiązującymi przepisami prawa.</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260120_696f7ce11faf8.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260120_696f7ce11faf8.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260120_696f7ce11faf8.webp" />
 </item>
 <item>
   <title><![CDATA[Będzie kompleksowa przebudowa oczyszczalni ścieków w Kamieńsku]]></title>
@@ -963,20 +973,20 @@
   <link>https://epiotrkow.pl/news/nowy-wydzial-w-piotrkowskiej-komendzie-policji,61057</link>
   <guid isPermaLink="false">72dd7ce9a5355f69b17bb07ed4b0115abaf6dd87</guid>
   <pubDate>Fri, 16 Jan 2026 13:15:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260116_696a2c6b320ec.webp" alt="miniatura"/></p><p>Uroczystość rozpoczęła się złożeniem meldunku Komendantowi Miejskiemu Policji w Piotrkowie Trybunalskim przez dowódcę uroczystości kom. Sylwestra Nieśmiałka. W wydarzeniu uczestniczyli przedstawiciele kadry kierowniczej, związków zawodowych działających na terenie piotrkowskiej komendy oraz pracownicy cywilni. Podczas zbiórki odczytane zostały rozkazy personalne Komendanta Miejskiego Policji w Piotrkowie Trybunalskim podinsp. Jakuba Kowalczyka. Odczytał je specjalista Zespołu Kadr i Szkolenia Jakub Kopertowski. Następnie mianowani funkcjonariusze odebrali rozkazy z rąk komendanta. Stanowiska kierownicze objęli: podkom. Marika Leśniewska-Albin – pełniąca obowiązki Naczelnika Wydziału Przestępstw w Ruchu Drogowym i Wykroczeń, asp. Izabela Szczegielniak – p.o. Kierownika Ogniwa Przestępstw w Ruchu Drogowym nowo utworzonego wydziału, kom. Piotr Łojek – p.o. Naczelnika Wydziału Kryminalnego, podinsp. Michał Radziński – p.o. Naczelnika Wydziału Wywiadowczego, nadkom. Witold Błoński – p.o.…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260116_696a2c6b320ec.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260116_696a2c6b320ec.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260116_696a2c6b320ec.webp" />
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260116_696a2c6b320ec.webp" alt="miniatura"/></p><p>Uroczystość rozpoczęła się złożeniem meldunku Komendantowi Miejskiemu Policji w Piotrkowie Trybunalskim przez dowódcę uroczystości kom. Sylwestra Nieśmiałka. W wydarzeniu uczestniczyli przedstawiciele kadry kierowniczej, związków zawodowych działających na terenie piotrkowskiej komendy oraz pracownicy cywilni. Podczas zbiórki odczytane zostały rozkazy personalne Komendanta Miejskiego Policji w Piotrkowie Trybunalskim podinsp. Jakuba Kowalczyka. Odczytał je specjalista Zespołu Kadr i Szkolenia Jakub Kopertowski. Następnie mianowani funkcjonariusze odebrali rozkazy z rąk komendanta. Stanowiska kierownicze objęli: podkom. Marika Leśniewska-Albin – pełniąca obowiązki Naczelnika Wydziału Przestępstw w Ruchu Drogowym i Wykroczeń, asp. Izabela Szczegielniak – p.o. Kierownika Ogniwa Przestępstw w Ruchu Drogowym nowo utworzonego wydziału, kom. Piotr Łojek – p.o. Naczelnika Wydziału Kryminalnego, podinsp. Michał Radziński – p.o. Naczelnika Wydziału Wywiadowczego, nadkom. Witold Błoński – p.o.…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260116_696a2c6b320ec.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260116_696a2c6b320ec.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260116_696a2c6b320ec.webp" />
 </item>
 <item>
   <title><![CDATA[Książka na weekend – czy można wytłumaczyć zbrodnię?]]></title>
   <link>https://epiotrkow.pl/news/ksiazka-na-weekend-czy-mozna-wytlumaczyc-zbrodnie,61065</link>
   <guid isPermaLink="false">8c0ad0df3406a4bc998cf74a88b65ab50ac45b87</guid>
   <pubDate>Sat, 17 Jan 2026 07:24:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260117_696ae008b21c4.webp" alt="miniatura"/></p><p>Pierwszą z propozycji jest kontynuacja cyklu „Kanon Lema”, w której przed tygodniem prezentowaliśmy powieść „Solaris”. Teraz sięgnijmy po „Kongres futurologiczny”, rzecz jasna autorstwa Stanisława Lema, wydany nakładem Wydawnictwa Literackiego. Jak i poprzednia, tak i ta powieść została wydana w twardej oprawie z surową grafiką. To brawurowa opowieść o konsumpcyjnym społeczeństwie, jak najbardziej aktualna w obecnych realiach. Stanisław Lem to twórca, filozof i wizjoner, a jego powieści przetłumaczono na wiele języków i sprzedano w milionach egzemplarzy. Na ich podstawie kręcono filmy, pisano inne książki. W serii Kanon Lema ukażą się tytuły uznawane za najważniejsze dzieła tego autora. Nowego wydania „Kongresu futurologicznego” możecie szukać w dobrych księgarniach, a starsze – znajdziecie w każdej szanującej się bibliotece. O tej książce można też posłuchać: Druga w kolejności pozycja to także kontynuacj a. Dokładniej prezentowanej przed tygodniem powieści Daniela Komorowskiego z…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260117_696ae008b21c4.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260117_696ae008b21c4.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260117_696ae008b21c4.webp" />
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260117_696ae008b21c4.webp" alt="miniatura"/></p><p>Pierwszą z propozycji jest kontynuacja cyklu „Kanon Lema”, w której przed tygodniem prezentowaliśmy powieść „Solaris”. Teraz sięgnijmy po „Kongres futurologiczny”, rzecz jasna autorstwa Stanisława Lema, wydany nakładem Wydawnictwa Literackiego. Jak i poprzednia, tak i ta powieść została wydana w twardej oprawie z surową grafiką. To brawurowa opowieść o konsumpcyjnym społeczeństwie, jak najbardziej aktualna w obecnych realiach. Stanisław Lem to twórca, filozof i wizjoner, a jego powieści przetłumaczono na wiele języków i sprzedano w milionach egzemplarzy. Na ich podstawie kręcono filmy, pisano inne książki. W serii Kanon Lema ukażą się tytuły uznawane za najważniejsze dzieła tego autora. Nowego wydania „Kongresu futurologicznego” możecie szukać w dobrych księgarniach, a starsze – znajdziecie w każdej szanującej się bibliotece. O tej książce można też posłuchać: Druga w kolejności pozycja to także kontynuacj a. Dokładniej prezentowanej przed tygodniem powieści Daniela Komorowskiego z…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260117_696ae008b21c4.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260117_696ae008b21c4.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260117_696ae008b21c4.webp" />
 </item>
 <item>
   <title><![CDATA[Likwidacja przejść dla pieszych w Piotrkowie. Sprawdź gdzie ich nie będzie]]></title>
@@ -1283,20 +1293,20 @@
   <link>https://epiotrkow.pl/news/prezesi-miejskich-spolek-nieobecni-prezydent-opuscil-sale-nadzwyczajna-sesja-rady-miasta-w-piotrkowie,61016</link>
   <guid isPermaLink="false">c4f1db43b77ac420e881b909dc57c6cc445d6836</guid>
   <pubDate>Wed, 14 Jan 2026 12:32:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260114_69677c385e512.webp" alt="miniatura"/></p><p>Część radnych, którzy podpisali się we wniosku - tłumaczyła , że nadzwyczajna sesja była konieczna ze względu na brak wiedzy radnych co dzieje się w miejskich spółkach. Jak mówi Agnieszka Chojnacka, prezesi spółek często się zmieniają, co oznacza, że radni nie mogą zapoznać się z faktycznym stanem ich funkcjonowania. Przede wszystkim chcemy się dowiedzieć tego, co się dzieje aktualnie w spółkach miejskich. To jest temat, który na każdej sesji jest zamiatany pod dywan. Radni już wielokrotnie prosili o to, by na każdej sesji był przedstawiciel każdej spółki miejskiej. W Bełchatowie jest to na porządku dziennym, że prezesi spółek składają comiesięczny raport z kondycji spółek, z tego, co się w nich dzieje. Oprócz tego ogromny problem jest w tej chwili taki, że u nas prezesi spółek zmieniają się jak pogoda - co chwila jest inny prezes . To też wywołuje pewne perturbacje w tychże spółkach. Jakby nie było, spółki są własnością miasta i my jako radni mamy prawo wiedzieć, co się aktualnie…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260114_69677c385e512.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260114_69677c385e512.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260114_69677c385e512.webp" />
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260114_69677c385e512.webp" alt="miniatura"/></p><p>Część radnych, którzy podpisali się we wniosku - tłumaczyła , że nadzwyczajna sesja była konieczna ze względu na brak wiedzy radnych co dzieje się w miejskich spółkach. Jak mówi Agnieszka Chojnacka, prezesi spółek często się zmieniają, co oznacza, że radni nie mogą zapoznać się z faktycznym stanem ich funkcjonowania. Przede wszystkim chcemy się dowiedzieć tego, co się dzieje aktualnie w spółkach miejskich. To jest temat, który na każdej sesji jest zamiatany pod dywan. Radni już wielokrotnie prosili o to, by na każdej sesji był przedstawiciel każdej spółki miejskiej. W Bełchatowie jest to na porządku dziennym, że prezesi spółek składają comiesięczny raport z kondycji spółek, z tego, co się w nich dzieje. Oprócz tego ogromny problem jest w tej chwili taki, że u nas prezesi spółek zmieniają się jak pogoda - co chwila jest inny prezes . To też wywołuje pewne perturbacje w tychże spółkach. Jakby nie było, spółki są własnością miasta i my jako radni mamy prawo wiedzieć, co się aktualnie…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260114_69677c385e512.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260114_69677c385e512.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260114_69677c385e512.webp" />
 </item>
 <item>
   <title><![CDATA[Zaginęła 16-letnia Marzena z Piotrkowa]]></title>
   <link>https://epiotrkow.pl/news/zaginela-16-letnia-marzena-policja-apeluje-o-pomoc,61029</link>
   <guid isPermaLink="false">421fd5e4732618f44bf3b37f8f4d99db10bf1aeb</guid>
   <pubDate>Wed, 14 Jan 2026 18:27:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260114_6967e076897ec.webp" alt="miniatura"/></p><p>Zaginięcie nastolatki zgłoszono po tym, jak po wyjściu ze szkoły ślad po niej zaginął. Od momentu zaginięcia dziewczyna nie nawiązała żadnego kontaktu z bliskimi. W dniu zaginięcia Marzena była ubrana w: Miała przy sobie plecak w kolorze fioletowo-czarnym. Policja apelowała do wszystkich osób, które widziały zaginioną lub posiadają jakiekolwiek informacje mogące pomóc w ustaleniu jej miejsca pobytu, o pilny kontakt z funkcjonariuszami pod numerem telefonu 478 461 462 lub numerem alarmowym 112. Nastolatka około godziny 19 została odnaleziona w restauracji Mcdonalds przy ulicy Sulejowskiej. Jej zdrowiu nic nie zagraża.</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260114_6967e076897ec.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260114_6967e076897ec.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260114_6967e076897ec.webp" />
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260114_6967e076897ec.webp" alt="miniatura"/></p><p>Zaginięcie nastolatki zgłoszono po tym, jak po wyjściu ze szkoły ślad po niej zaginął. Od momentu zaginięcia dziewczyna nie nawiązała żadnego kontaktu z bliskimi. W dniu zaginięcia Marzena była ubrana w: Miała przy sobie plecak w kolorze fioletowo-czarnym. Policja apelowała do wszystkich osób, które widziały zaginioną lub posiadają jakiekolwiek informacje mogące pomóc w ustaleniu jej miejsca pobytu, o pilny kontakt z funkcjonariuszami pod numerem telefonu 478 461 462 lub numerem alarmowym 112. Nastolatka około godziny 19 została odnaleziona w restauracji Mcdonalds przy ulicy Sulejowskiej. Jej zdrowiu nic nie zagraża.</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260114_6967e076897ec.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260114_6967e076897ec.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260114_6967e076897ec.webp" />
 </item>
 <item>
   <title><![CDATA[Nowoczesna łączność dla bezpieczeństwa mieszkańców Dalkowa]]></title>
@@ -1603,10 +1613,10 @@
   <link>https://epiotrkow.pl/news/wiadukty-i-tunele-na-przejazdach-kolejowych-w-piotrkowie-czy-nas-na-to-stac,60991</link>
   <guid isPermaLink="false">34681a36c2fd6b7a82edb50a1acf5d5b356065ff</guid>
   <pubDate>Mon, 12 Jan 2026 13:52:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260112_6964f426a8fb0.webp" alt="miniatura"/></p><p>Oczywiście do podjęcia decyzji droga jeszcze daleka, ale władze miasta przygotowują stosowne analizy. Te mają wykazać, co byłoby lepsze: tunel czy wiadukt? W tym kontekście pojawiał się temat przejazdu przez Słowackiego, no bo jest to centrum miasta. Dużo osób korzysta z tej drogi, no i to w większości mieszkańcom przeszkadza. Sporo dyskutowaliśmy na ten temat, czy ma być to Rolnicza, czy może Roosevelta, bo też akurat zdarza się okazja, że remontujemy, czy przebudowujemy ten odcinek Roosevelta. Jeżeli chodzi o północną część miasta, to tam w zasadzie jedyną możliwością takiego przekroczenia tej linii kolejowej jest tunel pod koleją na ulicy Wojska Polskiego. A wiemy, co się tam dzieje, jest to droga o dużym natężeniu ruchu. Jeżeli nie tutaj, to pozostaje ta ulica Rolnicza - to jedno z potencjalnych miejsc, które wybieramy do przebudowy - powiedział w programie "O tym się mówi" Adam Bak, inżynier miasta. Na pytanie, ile kosztowałaby tak przebudowa, odpowiedział, że nawet 200 milionów…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260112_6964f426a8fb0.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260112_6964f426a8fb0.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260112_6964f426a8fb0.webp" />
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260112_6964f426a8fb0.webp" alt="miniatura"/></p><p>Oczywiście do podjęcia decyzji droga jeszcze daleka, ale władze miasta przygotowują stosowne analizy. Te mają wykazać, co byłoby lepsze: tunel czy wiadukt? W tym kontekście pojawiał się temat przejazdu przez Słowackiego, no bo jest to centrum miasta. Dużo osób korzysta z tej drogi, no i to w większości mieszkańcom przeszkadza. Sporo dyskutowaliśmy na ten temat, czy ma być to Rolnicza, czy może Roosevelta, bo też akurat zdarza się okazja, że remontujemy, czy przebudowujemy ten odcinek Roosevelta. Jeżeli chodzi o północną część miasta, to tam w zasadzie jedyną możliwością takiego przekroczenia tej linii kolejowej jest tunel pod koleją na ulicy Wojska Polskiego. A wiemy, co się tam dzieje, jest to droga o dużym natężeniu ruchu. Jeżeli nie tutaj, to pozostaje ta ulica Rolnicza - to jedno z potencjalnych miejsc, które wybieramy do przebudowy - powiedział w programie "O tym się mówi" Adam Bak, inżynier miasta. Na pytanie, ile kosztowałaby tak przebudowa, odpowiedział, że nawet 200 milionów…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260112_6964f426a8fb0.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260112_6964f426a8fb0.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260112_6964f426a8fb0.webp" />
 </item>
 <item>
   <title><![CDATA[Zbierała pieniądze na studniówkę i zniknęła. Matka uczennicy przywłaszczyła 14 tysięcy złotych?]]></title>
@@ -4997,16 +5007,6 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251207_69355cbf4594f.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251207_69355cbf4594f.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251207_69355cbf4594f.webp" />
-</item>
-<item>
-  <title><![CDATA[Już po raz 81. ulicami Piotrkowa przeszedł Męski Różaniec]]></title>
-  <link>https://epiotrkow.pl/news/juz-po-raz-81-ulicami-piotrkowa-przeszedl-meski-rozaniec,60604</link>
-  <guid isPermaLink="false">9f2c3a2135d635b8dcb29ef5fd65dbbec7d9a3d3</guid>
-  <pubDate>Sun, 07 Dec 2025 09:50:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251207_6935409f770cd.webp" alt="miniatura"/></p><p>W sobotnie przedpołudnie mężczyźni spotkali się pod kościołem Najświętszego Serca Jezusowego. O godzinie 10:00 wysłuchali czytania z Listu św. Pawła Apostoła do Efezjan o walce duchowej, a następnie po odmówieniu modlitwy do św. Michała Archanioła ruszyli z różańcem przez miasto. Wśród śpiewu pieśni religijnych i wspólnej modlitwy rozważali kolejne tajemnice, modląc się w różnych intencjach. O godzinie 11:00 wzięli udział we wspólnotowej Mszy Świętej w kościele św. Jacka i św. Doroty. Postawa wiary, to też oczekiwanie, a więc również cierpliwość i wytrwałość. Na wzór Maryi chcemy być otwarci i posłuszni woli Boga. Czerpiąc siłę z tej wyjątkowej relacji chcemy dawać świadectwo wśród ludzi. Działalność misyjna wprost wynika z Pisma Świętego, podobnie jak ostrzeżenia z ust samego Jezusa, że właśnie z Jego powodu będziemy doznawali zniewagi i pomówień ze strony innych ludzi. To wszystko jest bardzo symboliczne zwłaszcza w czasie Adwentu i oczekiwania na Święta Bożego Narodzenia. Można w…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251207_6935409f770cd.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251207_6935409f770cd.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2025/thumb/335x185/20251207_6935409f770cd.webp" />
 </item>
 </channel>
 </rss>
