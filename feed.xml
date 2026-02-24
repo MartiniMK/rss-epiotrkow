@@ -5,7 +5,7 @@
 <title>epiotrkow.pl – Wydarzenia v3</title>
 <link>https://epiotrkow.pl/news/</link>
 <description>Automatyczny RSS z list newsów epiotrkow.pl.</description>
-<lastBuildDate>Tue, 24 Feb 2026 06:19:33 +0000</lastBuildDate>
+<lastBuildDate>Tue, 24 Feb 2026 08:03:59 +0000</lastBuildDate>
 <ttl>60</ttl>
 
 <item>
@@ -17,16 +17,6 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260223_699cb72f8cee5.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260223_699cb72f8cee5.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260223_699cb72f8cee5.webp" />
-</item>
-<item>
-  <title><![CDATA[Zakręt pokonał kierującą Citroenem. Skończyło się na lawecie]]></title>
-  <link>https://epiotrkow.pl/news/zakret-przy-m-parku-okazal-sie-bardziej-wymagajacy-niz-sie-wydawalo-kolo-powiedzialo-pas,61517</link>
-  <guid isPermaLink="false">163685953ce9295302b557d2af40559234e10815</guid>
-  <pubDate>Mon, 23 Feb 2026 21:59:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260223_699cc031459fc.webp" alt="miniatura"/></p><p>Według naszych ustaleń kierująca ścięła zakręt. Efekt? Samochód doznał obrażeń, Urwane przednie koło, wyciek płynów eksploatacyjnych, uszkodzone drzwi, błotnik, zderzak i lusterko – lista strat jest długa. Auto zatrzymało się efektownie, z wyraźnym sygnałem, że dalsza jazda nie wchodzi w grę. Koło najwyraźniej uznało, że dalsza współpraca nie ma sensu i zakończyło dyżur. Na szczęście w zdarzeniu nikt nie ucierpiał. Ucierpiała za to karoseria – i zapewne budżet właściciela. To kolejny przykład na to, że nawet parking przy galerii potrafi zaskoczyć. Szczególnie gdy zakręt traktujemy jak sugestię, a nie obowiązek.</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260223_699cc031459fc.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260223_699cc031459fc.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260223_699cc031459fc.webp" />
 </item>
 <item>
   <title><![CDATA[Milion złotych na budowę ulicy Chopina w Kamieńsku]]></title>
@@ -297,6 +287,16 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260221_6999af5ab81aa.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260221_6999af5ab81aa.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260221_6999af5ab81aa.webp" />
+</item>
+<item>
+  <title><![CDATA[Zakręt pokonał kierującą Citroenem. Skończyło się na lawecie]]></title>
+  <link>https://epiotrkow.pl/news/zakret-przy-m-parku-okazal-sie-bardziej-wymagajacy-niz-sie-wydawalo-kolo-powiedzialo-pas,61517</link>
+  <guid isPermaLink="false">163685953ce9295302b557d2af40559234e10815</guid>
+  <pubDate>Mon, 23 Feb 2026 21:59:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260223_699cc031459fc.webp" alt="miniatura"/></p><p>Według naszych ustaleń kierująca ścięła zakręt. Efekt? Samochód doznał obrażeń, Urwane przednie koło, wyciek płynów eksploatacyjnych, uszkodzone drzwi, błotnik, zderzak i lusterko – lista strat jest długa. Auto zatrzymało się efektownie, z wyraźnym sygnałem, że dalsza jazda nie wchodzi w grę. Koło najwyraźniej uznało, że dalsza współpraca nie ma sensu i zakończyło dyżur. Na szczęście w zdarzeniu nikt nie ucierpiał. Ucierpiała za to karoseria – i zapewne budżet właściciela. To kolejny przykład na to, że nawet parking przy galerii potrafi zaskoczyć. Szczególnie gdy zakręt traktujemy jak sugestię, a nie obowiązek.</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260223_699cc031459fc.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260223_699cc031459fc.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260223_699cc031459fc.webp" />
 </item>
 <item>
   <title><![CDATA[Walczyli o Pióro Wójta. Tak wyglądało ortograficzne starcie w Moszczenicy]]></title>
