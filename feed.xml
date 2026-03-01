@@ -5,7 +5,7 @@
 <title>epiotrkow.pl – Wydarzenia v3</title>
 <link>https://epiotrkow.pl/news/</link>
 <description>Automatyczny RSS z list newsów epiotrkow.pl.</description>
-<lastBuildDate>Sun, 01 Mar 2026 20:44:44 +0000</lastBuildDate>
+<lastBuildDate>Sun, 01 Mar 2026 21:38:37 +0000</lastBuildDate>
 <ttl>60</ttl>
 
 <item>
@@ -19,9 +19,9 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/20260301_69a47de52d50a.webp" />
 </item>
 <item>
-  <title><![CDATA[Przełom w leczeniu Alzheimera z Łodzi. To może być szansa także dla mieszkańców Piotrkowa i regionu]]></title>
-  <link>https://epiotrkow.pl/news/przelom-w-leczeniu-alzheimera-z-lodzi-to-moze-byc-szansa-takze-dla-mieszkancow-piotrkowa-i-regionu,61579</link>
-  <guid isPermaLink="false">1ab6e4a93c3b56baab91d0e914e3dfe5e50b6896</guid>
+  <title><![CDATA[Przełom w leczeniu Alzheimera. To może być szansa także dla mieszkańców Piotrkowa i regionu]]></title>
+  <link>https://epiotrkow.pl/news/przelom-w-leczeniu-alzheimera-to-moze-byc-szansa-takze-dla-mieszkancow-piotrkowa-i-regionu,61579</link>
+  <guid isPermaLink="false">36c88d8bad5771155030cb0cbd066de96057fdaa</guid>
   <pubDate>Sun, 01 Mar 2026 18:40:00 +0000</pubDate>
   <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260227_69a1b6058ff73.webp" alt="miniatura"/></p><p>Urządzenie przeszło wieloletnie badania, uzyskało europejską certyfikację i przygotowywane jest do wprowadzenia na rynek. O kulisach prac, mechanizmie działania i planach na najbliższe miesiące w rozmowie z naszą redakcją mówił dr hab. n. med. Adam Broncel, neurolog i współtwórca technologii. Jak podkreśla dr hab. n. med. Adam Broncel, jednym z największych wyzwań w leczeniu choroby Alzheimera jest fakt, że rozwija się ona przez lata bez wyraźnych objawów. - Z obecnej wiedzy, którą posiadamy na podstawie wieloletnich badań naukowych, wiemy, że choroba rozwija się bardzo długo przed okresem wystąpienia pierwszych objawów klinicznych. To, co dzisiaj udało nam się odkryć w medycynie, pozwala nam domniemać, że ten okres trwa tak zwany niemy kliniczny nawet 10-15 lat, w czasie którego bardzo powoli nasz mózg traci zdolności zapamiętywania. Właśnie ten „niemy” okres stał się punktem wyjścia do opracowania terapii, która ma wspierać procesy poznawcze zanim dojdzie do zaawansowanego otępienia.</p>]]></description>
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260227_69a1b6058ff73.webp" type="image/webp" />
@@ -87,16 +87,6 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a43fff46a02.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a43fff46a02.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a43fff46a02.webp" />
-</item>
-<item>
-  <title><![CDATA[Większy ruch na stacjach benzynowych. Niektórzy tankują na zapas]]></title>
-  <link>https://epiotrkow.pl/news/wiekszy-ruch-na-stacjach-benzynowych-niektorzy-tankuja-na-zapas,61589</link>
-  <guid isPermaLink="false">aba5ec430252aa5f2c0e2ded73bd144f05737210</guid>
-  <pubDate>Sun, 01 Mar 2026 12:12:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a41f837739e.webp" alt="miniatura"/></p><p>Przez wspomnianą cieśninę przepływa codziennie nawet 17-20 milionów baryłek ropy. To ponad 20 proc. całego globalnego zapotrzebowania. Blokada przełoży się zapewne na wzrost cen na stacjach paliw. Cieśnina Ormuz to przesmyk, w najwęższym miejscu mający 33 km szerokości, umożliwiający żeglugę pomiędzy Zatoką Perską a Zatoką Omańską na Morzu Arabskim. Przebiega przez nią szlak morski, którym transportuje się jedną piątą globalnych dostaw ropy naftowej. - Konsekwencją zamknięcia jedynego z najważniejszy akwenów światowego handlu ropą naftową drogą morską byłby drastyczny wzrost ceny surowca na światowych rynkach - mówił kilka dni temu w rozmowie z Polską Agencją Prasową dr Łukasz Wyszyński, kierownik Katedry Stosunków Międzynarodowych Akademii Marynarki Wojennej. Odpowiadając na pytania PAP o ocenę sytuacji po ataku USA i Izraela na Iran oraz opinii na temat konsekwencji tego konfliktu, w tym dla dostaw ropy naftowej z Bliskiego Wschodu, biuro prasowe Orlenu podkreśliło, że koncern…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a41f837739e.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a41f837739e.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a41f837739e.webp" />
 </item>
 <item>
   <title><![CDATA[Wypadek z udziałem motocyklisty. Sprawcą jednak kierująca Fordem]]></title>
@@ -207,6 +197,16 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260227_69a1f7e317780.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260227_69a1f7e317780.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260227_69a1f7e317780.webp" />
+</item>
+<item>
+  <title><![CDATA[Większy ruch na stacjach benzynowych. Niektórzy tankują na zapas]]></title>
+  <link>https://epiotrkow.pl/news/wiekszy-ruch-na-stacjach-benzynowych-niektorzy-tankuja-na-zapas,61589</link>
+  <guid isPermaLink="false">aba5ec430252aa5f2c0e2ded73bd144f05737210</guid>
+  <pubDate>Sun, 01 Mar 2026 12:12:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a41f837739e.webp" alt="miniatura"/></p><p>Przez wspomnianą cieśninę przepływa codziennie nawet 17-20 milionów baryłek ropy. To ponad 20 proc. całego globalnego zapotrzebowania. Blokada przełoży się zapewne na wzrost cen na stacjach paliw. Cieśnina Ormuz to przesmyk, w najwęższym miejscu mający 33 km szerokości, umożliwiający żeglugę pomiędzy Zatoką Perską a Zatoką Omańską na Morzu Arabskim. Przebiega przez nią szlak morski, którym transportuje się jedną piątą globalnych dostaw ropy naftowej. - Konsekwencją zamknięcia jedynego z najważniejszy akwenów światowego handlu ropą naftową drogą morską byłby drastyczny wzrost ceny surowca na światowych rynkach - mówił kilka dni temu w rozmowie z Polską Agencją Prasową dr Łukasz Wyszyński, kierownik Katedry Stosunków Międzynarodowych Akademii Marynarki Wojennej. Odpowiadając na pytania PAP o ocenę sytuacji po ataku USA i Izraela na Iran oraz opinii na temat konsekwencji tego konfliktu, w tym dla dostaw ropy naftowej z Bliskiego Wschodu, biuro prasowe Orlenu podkreśliło, że koncern…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a41f837739e.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a41f837739e.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260301_69a41f837739e.webp" />
 </item>
 <item>
   <title><![CDATA[Piotrkowskie Biennale Sztuki z dofinansowaniem z KPO. Sztuka o człowieku w świecie AI]]></title>
