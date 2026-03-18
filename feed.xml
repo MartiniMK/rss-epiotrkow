@@ -5,7 +5,7 @@
 <title>epiotrkow.pl – Wydarzenia v3</title>
 <link>https://epiotrkow.pl/news/</link>
 <description>Automatyczny RSS z list newsów epiotrkow.pl.</description>
-<lastBuildDate>Wed, 18 Mar 2026 17:21:35 +0000</lastBuildDate>
+<lastBuildDate>Wed, 18 Mar 2026 19:22:25 +0000</lastBuildDate>
 <ttl>60</ttl>
 
 <item>
@@ -89,16 +89,6 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba7ae7e77e8.webp" />
 </item>
 <item>
-  <title><![CDATA[Umowa podpisana. Rusza modernizacja stacji wodociągowej w Szynczycach]]></title>
-  <link>https://epiotrkow.pl/news/umowa-podpisana-rusza-modernizacja-stacji-wodociagowej-w-szynczycach,61823</link>
-  <guid isPermaLink="false">1d44b247a187d068636bc86a3c555b68bd41c784</guid>
-  <pubDate>Wed, 18 Mar 2026 09:03:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba5d9d224ac.webp" alt="miniatura"/></p><p>Przedsięwzięcie realizowane jest dzięki wsparciu środków z Krajowego Planu Odbudowy i Zwiększania Odporności. Inwestycja ma na celu unowocześnienie infrastruktury wodociągowej oraz poprawę jakości i bezpieczeństwa dostaw wody dla mieszkańców. Zakres prac przewidzianych w ramach modernizacji jest szeroki i obejmuje m.in. przebudowę instalacji technologicznych wraz z montażem nowoczesnego zestawu pompowego i lampy UV, a także utworzenie i wyposażenie pomieszczenia chlorowni. Budynek stacji przejdzie również kompleksową termomodernizację – wymieniona zostanie stolarka okienna i drzwiowa, docieplone zostaną ściany zewnętrzne oraz zmodernizowany dach. Istotnym elementem inwestycji będzie także przebudowa studni głębinowych wraz z wymianą pomp i armatury. Powstanie nowy zbiornik retencyjny o pojemności 200 m³ oraz zbiornik odcieków z chlorowni. Projekt zakłada również modernizację infrastruktury wodno-kanalizacyjnej, instalacji elektrycznych, sanitarnych i systemu monitoringu. W ramach…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba5d9d224ac.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba5d9d224ac.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba5d9d224ac.webp" />
-</item>
-<item>
   <title><![CDATA[Zderzenie na Dmowskiego. Motocykl znalazł się pod Skodą]]></title>
   <link>https://epiotrkow.pl/news/zderzenie-na-dmowskiego-motocykl-znalazl-sie-pod-skoda,61821</link>
   <guid isPermaLink="false">06d49972ea82162f48d686c37ca5afe926622270</guid>
@@ -107,6 +97,16 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba569ca26fc.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba569ca26fc.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba569ca26fc.webp" />
+</item>
+<item>
+  <title><![CDATA[Umowa podpisana. Rusza modernizacja stacji wodociągowej w Szynczycach]]></title>
+  <link>https://epiotrkow.pl/news/umowa-podpisana-rusza-modernizacja-stacji-wodociagowej-w-szynczycach,61823</link>
+  <guid isPermaLink="false">1d44b247a187d068636bc86a3c555b68bd41c784</guid>
+  <pubDate>Wed, 18 Mar 2026 09:03:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba5d9d224ac.webp" alt="miniatura"/></p><p>Przedsięwzięcie realizowane jest dzięki wsparciu środków z Krajowego Planu Odbudowy i Zwiększania Odporności. Inwestycja ma na celu unowocześnienie infrastruktury wodociągowej oraz poprawę jakości i bezpieczeństwa dostaw wody dla mieszkańców. Zakres prac przewidzianych w ramach modernizacji jest szeroki i obejmuje m.in. przebudowę instalacji technologicznych wraz z montażem nowoczesnego zestawu pompowego i lampy UV, a także utworzenie i wyposażenie pomieszczenia chlorowni. Budynek stacji przejdzie również kompleksową termomodernizację – wymieniona zostanie stolarka okienna i drzwiowa, docieplone zostaną ściany zewnętrzne oraz zmodernizowany dach. Istotnym elementem inwestycji będzie także przebudowa studni głębinowych wraz z wymianą pomp i armatury. Powstanie nowy zbiornik retencyjny o pojemności 200 m³ oraz zbiornik odcieków z chlorowni. Projekt zakłada również modernizację infrastruktury wodno-kanalizacyjnej, instalacji elektrycznych, sanitarnych i systemu monitoringu. W ramach…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba5d9d224ac.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba5d9d224ac.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69ba5d9d224ac.webp" />
 </item>
 <item>
   <title><![CDATA[Młode talenty z gminy Moszczenica zachwycają Polskę i świat]]></title>
@@ -139,16 +139,6 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260318_69b9e0e0dafdd.webp" />
 </item>
 <item>
-  <title><![CDATA[Sowy wróciły na Podklasztorze. Symboliczny powrót płomykówek do Sulejowa]]></title>
-  <link>https://epiotrkow.pl/news/plomykowki-wrocily-na-wolnosc-wyjatkowe-wypuszczenie-sow-w-sulejowie,61818</link>
-  <guid isPermaLink="false">1b989ea736fee0bf3d31c9042b4ce8a06c5da537</guid>
-  <pubDate>Tue, 17 Mar 2026 18:18:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b9b87466841.webp" alt="miniatura"/></p><p>Kilka miesięcy opieki, leczenia i nauki przetrwania zakończyło się szczęśliwym finałem. Na Podklasztorzu w Sulejowie wypuszczono na wolność młode płomykówki – sowy, które trafiły tu po rehabilitacji w Leśnym Ośrodku Rehabilitacji dla Dzikich Zwierząt w Kole . Ptaki trafiły do ośrodka jesienią w złym stanie. Były niedożywione i osłabione, wymagały długotrwałej opieki oraz przygotowania do samodzielnego życia. Jak podkreśla Paweł Kowalski z Ośrodka w Kole , proces rehabilitacji to nie tylko leczenie, ale również nauka kluczowych umiejętności. Uczyliśmy je polować, żeby poradziły sobie w naturze. To skomplikowany proces, bo ptaki nie mogą przyzwyczaić się do człowieka – tłumaczył. Przez kilka miesięcy młode sowy przygotowywano do życia na wolności, dbając o to, by zachowały naturalne instynkty. Teraz - w pełni sprawne - mogły wrócić do swojego środowiska. Moment wypuszczenia to dla opiekunów zawsze szczególna chwila. To trochę jak wypuszczenie dorosłego dziecka w świat. Z jednej strony…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b9b87466841.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b9b87466841.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b9b87466841.webp" />
-</item>
-<item>
   <title><![CDATA[Zajrzyj do serca piotrkowskiej ciepłowni węglowej tuż przed wyburzeniem [ZDJĘCIA]]]></title>
   <link>https://epiotrkow.pl/news/zajrzyj-do-serca-piotrkowskiej-cieplowni-weglowej-tuz-przed-wyburzeniem-zdjecia,61817</link>
   <guid isPermaLink="false">dc7cde732f693131f20c914628766fb3cac86f82</guid>
@@ -157,6 +147,16 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b94aed617ed.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b94aed617ed.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b94aed617ed.webp" />
+</item>
+<item>
+  <title><![CDATA[Sowy wróciły na Podklasztorze. Symboliczny powrót płomykówek do Sulejowa]]></title>
+  <link>https://epiotrkow.pl/news/plomykowki-wrocily-na-wolnosc-wyjatkowe-wypuszczenie-sow-w-sulejowie,61818</link>
+  <guid isPermaLink="false">1b989ea736fee0bf3d31c9042b4ce8a06c5da537</guid>
+  <pubDate>Tue, 17 Mar 2026 18:18:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b9b87466841.webp" alt="miniatura"/></p><p>Kilka miesięcy opieki, leczenia i nauki przetrwania zakończyło się szczęśliwym finałem. Na Podklasztorzu w Sulejowie wypuszczono na wolność młode płomykówki – sowy, które trafiły tu po rehabilitacji w Leśnym Ośrodku Rehabilitacji dla Dzikich Zwierząt w Kole . Ptaki trafiły do ośrodka jesienią w złym stanie. Były niedożywione i osłabione, wymagały długotrwałej opieki oraz przygotowania do samodzielnego życia. Jak podkreśla Paweł Kowalski z Ośrodka w Kole , proces rehabilitacji to nie tylko leczenie, ale również nauka kluczowych umiejętności. Uczyliśmy je polować, żeby poradziły sobie w naturze. To skomplikowany proces, bo ptaki nie mogą przyzwyczaić się do człowieka – tłumaczył. Przez kilka miesięcy młode sowy przygotowywano do życia na wolności, dbając o to, by zachowały naturalne instynkty. Teraz - w pełni sprawne - mogły wrócić do swojego środowiska. Moment wypuszczenia to dla opiekunów zawsze szczególna chwila. To trochę jak wypuszczenie dorosłego dziecka w świat. Z jednej strony…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b9b87466841.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b9b87466841.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260317_69b9b87466841.webp" />
 </item>
 <item>
   <title><![CDATA[Dzień Świętego Patryka w III LO w Piotrkowie z wyjątkowym przesłaniem]]></title>
@@ -259,6 +259,16 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b8024b92d61.webp" />
 </item>
 <item>
+  <title><![CDATA[Gdzie we wtorek i w środę nie będzie prądu? Sprawdź]]></title>
+  <link>https://epiotrkow.pl/news/gdzie-we-wtorek-i-w-srode-nie-bedzie-pradu-sprawdz,61799</link>
+  <guid isPermaLink="false">b2d61d73c4b919b027122eb5cc17777186365927</guid>
+  <pubDate>Mon, 16 Mar 2026 13:16:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b7f4da3fde2.webp" alt="miniatura"/></p><p>ul. Południowa 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 77, 78, 80, 82, 84 ul. Zachodnia 3, 5, 11, 13, 14, 16, 19, 21, 24, 38, 42 ul. Mazowiecka 18, 19, 20, 21, 22, 25, 26, 28, 30, 31, 33, 34, 36, 38, 40, 42, 44, 46, 52, 54 Trzy Morgi 12, 56, 58, 59, 61, 63, 67, 70, 74, 76, 78 Parzniewice Duże 105, 107, 108, 111, 113</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b7f4da3fde2.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b7f4da3fde2.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b7f4da3fde2.webp" />
+</item>
+<item>
   <title><![CDATA[Nowa szefowa KO w Piotrkowie o planach politycznych, sporach w radzie i protestach mieszkańców. „Chcę pobudzić struktury do działania”]]></title>
   <link>https://epiotrkow.pl/news/nowa-szefowa-ko-w-piotrkowie-o-planach-politycznych-sporach-w-radzie-i-protestach-mieszkancow-chce-pobudzic-struktury-do-dzialania,61800</link>
   <guid isPermaLink="false">a9ef7192122429807456688a526bc42386e9ef2f</guid>
@@ -277,16 +287,6 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b84062a62fa.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b84062a62fa.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b84062a62fa.webp" />
-</item>
-<item>
-  <title><![CDATA[Gdzie we wtorek i w środę nie będzie prądu? Sprawdź]]></title>
-  <link>https://epiotrkow.pl/news/gdzie-we-wtorek-i-w-srode-nie-bedzie-pradu-sprawdz,61799</link>
-  <guid isPermaLink="false">b2d61d73c4b919b027122eb5cc17777186365927</guid>
-  <pubDate>Mon, 16 Mar 2026 13:16:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b7f4da3fde2.webp" alt="miniatura"/></p><p>ul. Południowa 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 77, 78, 80, 82, 84 ul. Zachodnia 3, 5, 11, 13, 14, 16, 19, 21, 24, 38, 42 ul. Mazowiecka 18, 19, 20, 21, 22, 25, 26, 28, 30, 31, 33, 34, 36, 38, 40, 42, 44, 46, 52, 54 Trzy Morgi 12, 56, 58, 59, 61, 63, 67, 70, 74, 76, 78 Parzniewice Duże 105, 107, 108, 111, 113</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b7f4da3fde2.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b7f4da3fde2.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260316_69b7f4da3fde2.webp" />
 </item>
 <item>
   <title><![CDATA[Walne Zebranie Sprawozdawczo-Wyborcze OSP Podstole]]></title>
@@ -489,6 +489,16 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5c7987356a.webp" />
 </item>
 <item>
+  <title><![CDATA[Koniec epoki infokiosków. Kolejny zawalił się na placu Czarnieckiego]]></title>
+  <link>https://epiotrkow.pl/news/koniec-epoki-infokioskow-kolejny-zawalil-sie-na-placu-czarnieckiego,61771</link>
+  <guid isPermaLink="false">befaeb6ab76228c90bdb95a9ec9527a72b023967</guid>
+  <pubDate>Sat, 14 Mar 2026 16:51:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b58576d9182.webp" alt="miniatura"/></p><p>Kiedy pojawiały się w miastach, samorządowcy przekonywali, że to przyszłość informacji miejskiej: szybki dostęp do map, wydarzeń i urzędowych komunikatów. Infokioski instalowano więc chętnie i niemal wszędzie. Problem w tym, że technologia poszła dalej, a one zostały w tyle. Dziś większość z nich nie działa, świeci pustymi ekranami albo służy już tylko jako niechlubny element miejskiej scenografii, który z czasem staje się celem wandali. Upadek urządzenia na placu Czarnieckiego można więc potraktować symbolicznie. To trochę jak finał epoki, w której „nowoczesność” mierzyło się liczbą stojących na chodnikach terminali. Dziś informacje o mieście mieszczą się w kieszeni, a dawne cyfrowe wizytówki coraz częściej kończą swoją historię w ciszy – czasem po prostu przewracając się na bruk. Jeśli chcecie posłuchać o internetowym Piotrkowie, zapraszamy do odsłuchania audycji -Ale to już było.</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b58576d9182.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b58576d9182.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b58576d9182.webp" />
+</item>
+<item>
   <title><![CDATA[Nie ustąpiła pierwszeństwa motocyklowi i doprowadziła do zderzenia]]></title>
   <link>https://epiotrkow.pl/news/zderzenie-auta-z-motocyklem-w-poniatowie-kierujaca-volvo-nie-ustapila-pierwszenstwa,61779</link>
   <guid isPermaLink="false">ac111feab26435a6f7c1612385124038a9064a9e</guid>
@@ -497,16 +507,6 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5ddee3433d.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5ddee3433d.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5ddee3433d.webp" />
-</item>
-<item>
-  <title><![CDATA[Piotrkowianin rywalizował z trzecią drużyną w tabeli. Kto wygrał?]]></title>
-  <link>https://epiotrkow.pl/news/piotrkowianin-rywalizowal-z-trzecia-druzyna-w-tabeli-kto-wygral,61775</link>
-  <guid isPermaLink="false">694dcc599d5d7ad277fe99f346be5ca2c0927837</guid>
-  <pubDate>Sat, 14 Mar 2026 21:32:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5c6568dee2.webp" alt="miniatura"/></p><p>Do dwudziestej minuty meczu wygrywał bowiem Piotrkowianin, który zaczął mecz od wyniku 2:0, a później utrzymywał 1-2 bramkową przewagę. W 19. minucie, po rzucie Piotra Rutkowskiego było 11:9. I w tym momencie w grze naszej drużyny coś się zacięło. PGE Wybrzeże rzuciło pięć bramek z rzędu. Na sześć minut przed końcem pierwszej połowy było 14:11 dla gdańszczan, a po pierwszej połowie przyjezdni wygrywali 19:15. Trzy pierwsze bramki w drugiej połowie rzucili gospodarze i w 35. minucie było tylko 18:19, a na dodatek gdańszczanie grali jeszcze w osłabieniu. Piotrkowianin jednak tego nie wykorzystał. PGE Wybrzeże Gdańsk przełamało zaś chwilowy kryzys i w 40. minucie prowadziło 24:20. Gospodarze nie nawiązali już walki z wyżej notowanym rywalem, a mecz zakończył się ostatecznie zwycięstwem gdańszczan 35:28. Stanisław Makowiejew, trener Piotrkowianina - Dobrze gramy, a potem przychodzi fragment 5-minutowy, gdzie gramy jak nie zespół, który grał poprzednie 20 minut. Wybrzeże rzuca 5 bramek,…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5c6568dee2.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5c6568dee2.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5c6568dee2.webp" />
 </item>
 <item>
   <title><![CDATA[Płonęło mieszkanie przy Pasażu Rudowskiego w Piotrkowie]]></title>
@@ -519,14 +519,14 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5b01683d84.webp" />
 </item>
 <item>
-  <title><![CDATA[Koniec epoki infokiosków. Kolejny zawalił się na placu Czarnieckiego]]></title>
-  <link>https://epiotrkow.pl/news/koniec-epoki-infokioskow-kolejny-zawalil-sie-na-placu-czarnieckiego,61771</link>
-  <guid isPermaLink="false">befaeb6ab76228c90bdb95a9ec9527a72b023967</guid>
-  <pubDate>Sat, 14 Mar 2026 16:51:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b58576d9182.webp" alt="miniatura"/></p><p>Kiedy pojawiały się w miastach, samorządowcy przekonywali, że to przyszłość informacji miejskiej: szybki dostęp do map, wydarzeń i urzędowych komunikatów. Infokioski instalowano więc chętnie i niemal wszędzie. Problem w tym, że technologia poszła dalej, a one zostały w tyle. Dziś większość z nich nie działa, świeci pustymi ekranami albo służy już tylko jako niechlubny element miejskiej scenografii, który z czasem staje się celem wandali. Upadek urządzenia na placu Czarnieckiego można więc potraktować symbolicznie. To trochę jak finał epoki, w której „nowoczesność” mierzyło się liczbą stojących na chodnikach terminali. Dziś informacje o mieście mieszczą się w kieszeni, a dawne cyfrowe wizytówki coraz częściej kończą swoją historię w ciszy – czasem po prostu przewracając się na bruk. Jeśli chcecie posłuchać o internetowym Piotrkowie, zapraszamy do odsłuchania audycji -Ale to już było.</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b58576d9182.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b58576d9182.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b58576d9182.webp" />
+  <title><![CDATA[Piotrkowianin rywalizował z trzecią drużyną w tabeli. Kto wygrał?]]></title>
+  <link>https://epiotrkow.pl/news/piotrkowianin-rywalizowal-z-trzecia-druzyna-w-tabeli-kto-wygral,61775</link>
+  <guid isPermaLink="false">694dcc599d5d7ad277fe99f346be5ca2c0927837</guid>
+  <pubDate>Sat, 14 Mar 2026 21:32:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5c6568dee2.webp" alt="miniatura"/></p><p>Do dwudziestej minuty meczu wygrywał bowiem Piotrkowianin, który zaczął mecz od wyniku 2:0, a później utrzymywał 1-2 bramkową przewagę. W 19. minucie, po rzucie Piotra Rutkowskiego było 11:9. I w tym momencie w grze naszej drużyny coś się zacięło. PGE Wybrzeże rzuciło pięć bramek z rzędu. Na sześć minut przed końcem pierwszej połowy było 14:11 dla gdańszczan, a po pierwszej połowie przyjezdni wygrywali 19:15. Trzy pierwsze bramki w drugiej połowie rzucili gospodarze i w 35. minucie było tylko 18:19, a na dodatek gdańszczanie grali jeszcze w osłabieniu. Piotrkowianin jednak tego nie wykorzystał. PGE Wybrzeże Gdańsk przełamało zaś chwilowy kryzys i w 40. minucie prowadziło 24:20. Gospodarze nie nawiązali już walki z wyżej notowanym rywalem, a mecz zakończył się ostatecznie zwycięstwem gdańszczan 35:28. Stanisław Makowiejew, trener Piotrkowianina - Dobrze gramy, a potem przychodzi fragment 5-minutowy, gdzie gramy jak nie zespół, który grał poprzednie 20 minut. Wybrzeże rzuca 5 bramek,…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5c6568dee2.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5c6568dee2.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260314_69b5c6568dee2.webp" />
 </item>
 <item>
   <title><![CDATA[Czy po 30 latach wrócimy do Hymnu Miasta Piotrkowa Trybunalskiego?]]></title>
@@ -589,16 +589,6 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b418ed49972.webp" />
 </item>
 <item>
-  <title><![CDATA[Co dzieje się w weekend w Piotrkowie i regionie? Sprawdź!]]></title>
-  <link>https://epiotrkow.pl/news/co-dzieje-sie-w-weekend-w-piotrkowie-i-regionie-sprawdz,61716</link>
-  <guid isPermaLink="false">73a24e425a9545aa5403f61f925a97d8151aaa50</guid>
-  <pubDate>Fri, 13 Mar 2026 14:26:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260312_69b27b1695480.webp" alt="miniatura"/></p><p>„ Razem tworzymy Powiat Piotrkowski – Podsumowanie 2025 roku ”, Gminno-Szkolna Hala Sportowa w Moszczenicy przy ul. Spacerowej 15. Start godzina 17.00 . Spotkanie informacyjno-programowe ws. nadchodzących wyborów do Sejmu RP i Senatu RP „ Bezpartyjni Samorządowcy ” - Piotrków Trybunalski, ul. Generała Stefana Grota-Roweckiego 5. Start o godzinie 18:00 . Wykład ART13 " Mocna Sztuka: Wielka Zagadka Młodej Polski " - Piotrków Trybunalski , Miejski Ośrodek Kultury - Al. 3 Maja 12. Start o godzinie 18:00 . Jubileusz 10-lecia i wernisaż wystawy fotograficznej Stowarzyszenia Fotograficznego Kreatywni - Piotrków Trybunalski, Ośrodek Działań Artystycznych ul. Sieradzka 8. Start o godzinie 19:00. Koncert z okazji Dnia Kobiet - Tomaszów Mazowiecki , hala ZSP nr 3 („Samochodówka"), wejście od ul. Prawej. Start o godzinie 19:00. EkoDieta, warsztaty familijne - Piotrków Trybunalski , mediateka, ul. Skłodowskiej 3. Start o godzinie 10:00 . Turnieje piłki nożnej chłopców MABO-CUP, Piotrków…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260312_69b27b1695480.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260312_69b27b1695480.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260312_69b27b1695480.webp" />
-</item>
-<item>
   <title><![CDATA[Poparzeni Kawą Trzy rozgrzali wydarzenie Razem tworzymy Powiat Piotrkowski – Podsumowanie 2025 roku]]></title>
   <link>https://epiotrkow.pl/news/poparzeni-kawa-trzy-rozgrzali-wydarzenie-razem-tworzymy-powiat-piotrkowski-podsumowanie-2025-roku,61767</link>
   <guid isPermaLink="false">857f7e96847284994e0f73cd96634d65204202c0</guid>
@@ -607,6 +597,16 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b47460e779f.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b47460e779f.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b47460e779f.webp" />
+</item>
+<item>
+  <title><![CDATA[Co dzieje się w weekend w Piotrkowie i regionie? Sprawdź!]]></title>
+  <link>https://epiotrkow.pl/news/co-dzieje-sie-w-weekend-w-piotrkowie-i-regionie-sprawdz,61716</link>
+  <guid isPermaLink="false">73a24e425a9545aa5403f61f925a97d8151aaa50</guid>
+  <pubDate>Fri, 13 Mar 2026 14:26:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260312_69b27b1695480.webp" alt="miniatura"/></p><p>„ Razem tworzymy Powiat Piotrkowski – Podsumowanie 2025 roku ”, Gminno-Szkolna Hala Sportowa w Moszczenicy przy ul. Spacerowej 15. Start godzina 17.00 . Spotkanie informacyjno-programowe ws. nadchodzących wyborów do Sejmu RP i Senatu RP „ Bezpartyjni Samorządowcy ” - Piotrków Trybunalski, ul. Generała Stefana Grota-Roweckiego 5. Start o godzinie 18:00 . Wykład ART13 " Mocna Sztuka: Wielka Zagadka Młodej Polski " - Piotrków Trybunalski , Miejski Ośrodek Kultury - Al. 3 Maja 12. Start o godzinie 18:00 . Jubileusz 10-lecia i wernisaż wystawy fotograficznej Stowarzyszenia Fotograficznego Kreatywni - Piotrków Trybunalski, Ośrodek Działań Artystycznych ul. Sieradzka 8. Start o godzinie 19:00. Koncert z okazji Dnia Kobiet - Tomaszów Mazowiecki , hala ZSP nr 3 („Samochodówka"), wejście od ul. Prawej. Start o godzinie 19:00. EkoDieta, warsztaty familijne - Piotrków Trybunalski , mediateka, ul. Skłodowskiej 3. Start o godzinie 10:00 . Turnieje piłki nożnej chłopców MABO-CUP, Piotrków…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260312_69b27b1695480.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260312_69b27b1695480.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260312_69b27b1695480.webp" />
 </item>
 <item>
   <title><![CDATA[Teatralny Dzień Kobiet w Woli Krzysztoporskiej]]></title>
@@ -689,16 +689,6 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260312_69b2c99a8e8e7.webp" />
 </item>
 <item>
-  <title><![CDATA[Dlaczego sowy latają w nocy?  Dowiesz się na "Nocy sów"  już 20 marca.]]></title>
-  <link>https://epiotrkow.pl/news/dlaczego-sowy-lataja-w-nocy-dowiesz-sie-na-nocy-sow-juz-20-marca,61757</link>
-  <guid isPermaLink="false">b84ceafe1e2626c6916bd354bbf432c933dc425d</guid>
-  <pubDate>Fri, 13 Mar 2026 10:13:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3d728b0dfc.webp" alt="miniatura"/></p><p>W trakcie spotkania przewidziana jest prelekcja i prezentacja slajdów o życiu i występowaniu sów w naszym otoczeniu. Uczestnicy będą mogli zobaczyć żywe sowy czterech gatunków. Jakie? To będzie można odkryć w trakcie spotkania. Przewidziana jest również wycieczka terenowa i wabienie dzikich sów. Całość zajęć jest przewidywana na 2-3 godziny. Ze względu że planowane spotkanie jest na powietrzu , uprasza się o zabranie ciepłej odzieży. W trakcie wykładu o sowach będzie można napić się ciepłej herbaty i ogrzać się przy ognisku. Dla tych którzy będą mieli niedosyt wiadomości o sowach proponujemy kolejny wieczór z sowami w Spalskim PK, 27 marca 2026 o godz. 17.30 w dawna osada Ceteń -Anielin 82</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3d728b0dfc.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3d728b0dfc.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3d728b0dfc.webp" />
-</item>
-<item>
   <title><![CDATA[Powstanie wodny plac zabaw dla najmłodszych Bełchatowian]]></title>
   <link>https://epiotrkow.pl/news/powstanie-wodny-plac-zabaw-dla-najmlodszych-belchatowian,61755</link>
   <guid isPermaLink="false">98f50e4c712b16c3f3009f12a3915ed9e44d22b5</guid>
@@ -707,6 +697,16 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3bbf686799.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3bbf686799.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3bbf686799.webp" />
+</item>
+<item>
+  <title><![CDATA[Dlaczego sowy latają w nocy?  Dowiesz się na "Nocy sów"  już 20 marca.]]></title>
+  <link>https://epiotrkow.pl/news/dlaczego-sowy-lataja-w-nocy-dowiesz-sie-na-nocy-sow-juz-20-marca,61757</link>
+  <guid isPermaLink="false">b84ceafe1e2626c6916bd354bbf432c933dc425d</guid>
+  <pubDate>Fri, 13 Mar 2026 10:13:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3d728b0dfc.webp" alt="miniatura"/></p><p>W trakcie spotkania przewidziana jest prelekcja i prezentacja slajdów o życiu i występowaniu sów w naszym otoczeniu. Uczestnicy będą mogli zobaczyć żywe sowy czterech gatunków. Jakie? To będzie można odkryć w trakcie spotkania. Przewidziana jest również wycieczka terenowa i wabienie dzikich sów. Całość zajęć jest przewidywana na 2-3 godziny. Ze względu że planowane spotkanie jest na powietrzu , uprasza się o zabranie ciepłej odzieży. W trakcie wykładu o sowach będzie można napić się ciepłej herbaty i ogrzać się przy ognisku. Dla tych którzy będą mieli niedosyt wiadomości o sowach proponujemy kolejny wieczór z sowami w Spalskim PK, 27 marca 2026 o godz. 17.30 w dawna osada Ceteń -Anielin 82</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3d728b0dfc.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3d728b0dfc.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260313_69b3d728b0dfc.webp" />
 </item>
 <item>
   <title><![CDATA[Gmina Kamieńsk. Wyniesione przejścia dla pieszych na drodze do Gorzkowic]]></title>
@@ -1209,16 +1209,6 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260308_69ad423d40350.webp" />
 </item>
 <item>
-  <title><![CDATA[Mieszkańcy pytają o drogi w Piotrkowie. Miasto zapowiada remonty]]></title>
-  <link>https://epiotrkow.pl/news/mieszkancy-pytaja-o-drogi-w-piotrkowie-miasto-odpowiada-beda-remonty-ale-nie-wszystkie-od-razu,61677</link>
-  <guid isPermaLink="false">8ddc3e5013010cea19c16ac66e6ca1ee3ae06366</guid>
-  <pubDate>Fri, 06 Mar 2026 14:19:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae010a4498.webp" alt="miniatura"/></p><p>Jedno z pierwszych pytań dotyczyło ronda Bugaj i nieczytelnego oznakowania poziomego. Jak wyjaśnił dyrektor ZDiUM, odnowienie oznakowania w mieście rozpocznie się po zakończeniu wiosennego sprzątania ulic z zalegającego po zimie piasku. Najpierw odmalowane zostaną przejścia dla pieszych, a następnie oznakowanie na poszczególnych ulicach, które nie są objęte zmianami w organizacji ruchu. Słuchacz, który jest instruktorem nauki jazdy, zwrócił uwagę na oznakowanie na ulicy Źródlanej. Chodzi o znak ograniczenia prędkości do 30 km/h, który – według zgłaszającego – nie ma oznaczonego końca obowiązywania. Przedstawiciele miasta zapowiedzieli sprawdzenie sytuacji w terenie. Niewykluczone, że znak odwołujący ograniczenie mógł zostać zniszczony lub usunięty. Mieszkanka zapytała również o stan ulicy Geodezyjnej, który – jak podkreśliła – pogorszył się po rozpoczęciu remontu ulicy Rakowskiej. Miasto planuje kompleksowy remont tej ulicy, jednak inwestycja będzie częścią większego projektu. Obejmie…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae010a4498.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae010a4498.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae010a4498.webp" />
-</item>
-<item>
   <title><![CDATA[Tak świętowały panie w Magnolii! Wieczór pełen atrakcji i kobiecej energii]]></title>
   <link>https://epiotrkow.pl/news/wieczor-pelen-atrakcji-i-kobiecej-energii-tak-swietowano-dzien-kobiet-w-magnolii,61693</link>
   <guid isPermaLink="false">57189c438a81a04c099316d3c45736b2b3a922b1</guid>
@@ -1229,14 +1219,24 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260307_69ac9da7d5d31.webp" />
 </item>
 <item>
-  <title><![CDATA[W Piotrkowie powstanie Rada Muzeum? Powinna istnieć od 30 lat]]></title>
-  <link>https://epiotrkow.pl/news/w-piotrkowie-powstanie-rada-muzeum-trwaja-konsultacje-z-wladzami-miasta,61680</link>
-  <guid isPermaLink="false">d3701ef1269c2dc2aece4ab3c23c8841a5f64382</guid>
-  <pubDate>Fri, 06 Mar 2026 15:10:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae1b51e483.webp" alt="miniatura"/></p><p>Jak podkreśla dyrektor, w piotrkowskim muzeum taki organ dotąd nigdy nie funkcjonował, a powinien. Z tego co wiem, Rady Muzeum tutaj nigdy nie było. Złożyłem wniosek o jej powołanie i w tej chwili konsultujemy się w tej sprawie z prezydentem miasta – powiedział Dariusz Turek. Rada Muzeum to organ opiniodawczo-doradczy działający przy muzeach publicznych. Jej funkcjonowanie reguluje ustawa o muzeach. Do głównych zadań rady należy m.in. ocena działalności muzeum, opiniowanie planów pracy oraz wspieranie dyrektora w realizacji zadań związanych z ochroną i popularyzacją dziedzictwa kulturowego. Rada może również opiniować najważniejsze dokumenty dotyczące funkcjonowania placówki, w tym plany rozwoju czy sprawozdania z działalności. W praktyce jest więc forum współpracy muzeum z przedstawicielami środowisk naukowych, kulturalnych i społecznych. Skład Rady Muzeum określają przepisy. Zasiadają w niej m.in. przedstawiciele organizatora instytucji, czyli samorządu, a także osoby wskazane przez…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae1b51e483.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae1b51e483.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae1b51e483.webp" />
+  <title><![CDATA[Mieszkańcy pytają o drogi w Piotrkowie. Miasto zapowiada remonty]]></title>
+  <link>https://epiotrkow.pl/news/mieszkancy-pytaja-o-drogi-w-piotrkowie-miasto-odpowiada-beda-remonty-ale-nie-wszystkie-od-razu,61677</link>
+  <guid isPermaLink="false">8ddc3e5013010cea19c16ac66e6ca1ee3ae06366</guid>
+  <pubDate>Fri, 06 Mar 2026 14:19:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae010a4498.webp" alt="miniatura"/></p><p>Jedno z pierwszych pytań dotyczyło ronda Bugaj i nieczytelnego oznakowania poziomego. Jak wyjaśnił dyrektor ZDiUM, odnowienie oznakowania w mieście rozpocznie się po zakończeniu wiosennego sprzątania ulic z zalegającego po zimie piasku. Najpierw odmalowane zostaną przejścia dla pieszych, a następnie oznakowanie na poszczególnych ulicach, które nie są objęte zmianami w organizacji ruchu. Słuchacz, który jest instruktorem nauki jazdy, zwrócił uwagę na oznakowanie na ulicy Źródlanej. Chodzi o znak ograniczenia prędkości do 30 km/h, który – według zgłaszającego – nie ma oznaczonego końca obowiązywania. Przedstawiciele miasta zapowiedzieli sprawdzenie sytuacji w terenie. Niewykluczone, że znak odwołujący ograniczenie mógł zostać zniszczony lub usunięty. Mieszkanka zapytała również o stan ulicy Geodezyjnej, który – jak podkreśliła – pogorszył się po rozpoczęciu remontu ulicy Rakowskiej. Miasto planuje kompleksowy remont tej ulicy, jednak inwestycja będzie częścią większego projektu. Obejmie…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae010a4498.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae010a4498.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae010a4498.webp" />
+</item>
+<item>
+  <title><![CDATA[Ulicami Piotrkowa przeszedł Męski Różaniec. Wydarzenie odbyło się po raz 84.]]></title>
+  <link>https://epiotrkow.pl/news/ulicami-piotrkowa-przeszedl-meski-rozaniec-wydarzenie-odbylo-sie-po-raz-84,61691</link>
+  <guid isPermaLink="false">750b0a02e5e7e8015c28c315070ec5a8afe15ef1</guid>
+  <pubDate>Sat, 07 Mar 2026 14:15:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260307_69ac265c0ac67.webp" alt="miniatura"/></p><p>Modlitwa rozpoczęła się przy kościele Kościół Najświętszego Serca Jezusowego w Piotrkowie Trybunalskim. Następnie uczestnicy przeszli ulicą Juliusza Słowackiego, przez Rynek Trybunalski oraz ul. Wojska Polskiego, zatrzymując się po drodze na krótkie rozważania różańcowe. Jak podkreślają organizatorzy, inicjatywa ma charakter modlitewny i jest formą publicznego świadectwa wiary. Uczestnicy wskazują również, że spotkania są okazją do wspólnej refleksji nad życiem duchowym i codziennymi wyzwaniami. Po zakończeniu przemarszu o godz. 11:00 odbyła się wspólnotowa Msza Święta w kościele Kościół św. Jacka i św. Doroty w Piotrkowie Trybunalskim. Podczas marcowego spotkania uczestnicy skupili się na tematach spowiedzi, pokuty, przyjmowania trudności oraz ofiarowania swojego życia Bogu. Organizatorzy zwracają uwagę, że podczas modlitwy spotykają się zarówno z oznakami życzliwości ze strony mieszkańców, jak i z krytycznymi komentarzami w internecie. Kolejna edycja Męskiego Różańca, przypadająca w…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260307_69ac265c0ac67.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260307_69ac265c0ac67.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260307_69ac265c0ac67.webp" />
 </item>
 <item>
   <title><![CDATA[Na wesoło! Tak Moszczenica świętowała Dzień Kobiet]]></title>
@@ -1249,14 +1249,14 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260307_69ac28f812afe.webp" />
 </item>
 <item>
-  <title><![CDATA[Ulicami Piotrkowa przeszedł Męski Różaniec. Wydarzenie odbyło się po raz 84.]]></title>
-  <link>https://epiotrkow.pl/news/ulicami-piotrkowa-przeszedl-meski-rozaniec-wydarzenie-odbylo-sie-po-raz-84,61691</link>
-  <guid isPermaLink="false">750b0a02e5e7e8015c28c315070ec5a8afe15ef1</guid>
-  <pubDate>Sat, 07 Mar 2026 14:15:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260307_69ac265c0ac67.webp" alt="miniatura"/></p><p>Modlitwa rozpoczęła się przy kościele Kościół Najświętszego Serca Jezusowego w Piotrkowie Trybunalskim. Następnie uczestnicy przeszli ulicą Juliusza Słowackiego, przez Rynek Trybunalski oraz ul. Wojska Polskiego, zatrzymując się po drodze na krótkie rozważania różańcowe. Jak podkreślają organizatorzy, inicjatywa ma charakter modlitewny i jest formą publicznego świadectwa wiary. Uczestnicy wskazują również, że spotkania są okazją do wspólnej refleksji nad życiem duchowym i codziennymi wyzwaniami. Po zakończeniu przemarszu o godz. 11:00 odbyła się wspólnotowa Msza Święta w kościele Kościół św. Jacka i św. Doroty w Piotrkowie Trybunalskim. Podczas marcowego spotkania uczestnicy skupili się na tematach spowiedzi, pokuty, przyjmowania trudności oraz ofiarowania swojego życia Bogu. Organizatorzy zwracają uwagę, że podczas modlitwy spotykają się zarówno z oznakami życzliwości ze strony mieszkańców, jak i z krytycznymi komentarzami w internecie. Kolejna edycja Męskiego Różańca, przypadająca w…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260307_69ac265c0ac67.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260307_69ac265c0ac67.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260307_69ac265c0ac67.webp" />
+  <title><![CDATA[W Piotrkowie powstanie Rada Muzeum? Powinna istnieć od 30 lat]]></title>
+  <link>https://epiotrkow.pl/news/w-piotrkowie-powstanie-rada-muzeum-trwaja-konsultacje-z-wladzami-miasta,61680</link>
+  <guid isPermaLink="false">d3701ef1269c2dc2aece4ab3c23c8841a5f64382</guid>
+  <pubDate>Fri, 06 Mar 2026 15:10:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae1b51e483.webp" alt="miniatura"/></p><p>Jak podkreśla dyrektor, w piotrkowskim muzeum taki organ dotąd nigdy nie funkcjonował, a powinien. Z tego co wiem, Rady Muzeum tutaj nigdy nie było. Złożyłem wniosek o jej powołanie i w tej chwili konsultujemy się w tej sprawie z prezydentem miasta – powiedział Dariusz Turek. Rada Muzeum to organ opiniodawczo-doradczy działający przy muzeach publicznych. Jej funkcjonowanie reguluje ustawa o muzeach. Do głównych zadań rady należy m.in. ocena działalności muzeum, opiniowanie planów pracy oraz wspieranie dyrektora w realizacji zadań związanych z ochroną i popularyzacją dziedzictwa kulturowego. Rada może również opiniować najważniejsze dokumenty dotyczące funkcjonowania placówki, w tym plany rozwoju czy sprawozdania z działalności. W praktyce jest więc forum współpracy muzeum z przedstawicielami środowisk naukowych, kulturalnych i społecznych. Skład Rady Muzeum określają przepisy. Zasiadają w niej m.in. przedstawiciele organizatora instytucji, czyli samorządu, a także osoby wskazane przez…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae1b51e483.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae1b51e483.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260306_69aae1b51e483.webp" />
 </item>
 <item>
   <title><![CDATA[Piękny jubileusz i wyjątkowy koncert w Piotrkowie. Benedyktynki świętują 100-lecie]]></title>
