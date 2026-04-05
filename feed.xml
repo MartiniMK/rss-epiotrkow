@@ -5,7 +5,7 @@
 <title>epiotrkow.pl – Wydarzenia v3</title>
 <link>https://epiotrkow.pl/news/</link>
 <description>Automatyczny RSS z list newsów epiotrkow.pl.</description>
-<lastBuildDate>Sun, 05 Apr 2026 19:47:59 +0000</lastBuildDate>
+<lastBuildDate>Sun, 05 Apr 2026 20:50:27 +0000</lastBuildDate>
 <ttl>60</ttl>
 
 <item>
@@ -29,16 +29,6 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260405_69d29361afc0d.webp" />
 </item>
 <item>
-  <title><![CDATA[Przeciętna polska rodzina wyrzuca 165 kg żywności rocznie]]></title>
-  <link>https://epiotrkow.pl/news/przecietna-polska-rodzina-wyrzuca-165-kg-zywnosci-rocznie,62057</link>
-  <guid isPermaLink="false">b25d3b64d72d09d6d2ebe1f1748bb90d58508e3d</guid>
-  <pubDate>Sat, 04 Apr 2026 19:14:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260404_69d1475216d9d.webp" alt="miniatura"/></p><p>Instytut Ochrony Środowiska - Państwowy Instytut Badawczy zaznaczył, że w skali kraju rocznie wyrzuca się ponad 2,5 mln ton żywności, a gospodarstwa domowe odpowiadają za prawie 60 proc. całkowitego marnotrawstwa żywności w Polsce. „Choć Wielkanoc trwa krócej niż Boże Narodzenie, mechanizm marnotrawstwa żywności pozostaje ten sam. Przygotowujemy wiele potraw »na zapas«, często znacznie przekraczając realne potrzeby domowników i gości” - wskazał IOŚ-PIB. Dodał, że w okresie Wielkanocy „w krótkim czasie kumulują się niemal wszystkie czynniki sprzyjające marnowaniu żywności”, co w efekcie generuje obciążenie środowiska i straty finansowe dla rodzin. IOŚ poinformował, że według szacunków polska rodzina na niewykorzystanej żywności traci średnio 2–3 tys. zł rocznie, a co tydzień do kosza trafiają produkty warte kilkadziesiąt zł. Dodał, że ponad 80 proc. zmarnowanej żywności trafia bezpośrednio do kosza. Jak wyliczył, największą część, bo 25 proc. odpadów stanowią gotowe dania i resztki…</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260404_69d1475216d9d.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260404_69d1475216d9d.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260404_69d1475216d9d.webp" />
-</item>
-<item>
   <title><![CDATA[Pożar turbiny wiatrowej w gminie Czarnocin]]></title>
   <link>https://epiotrkow.pl/news/pozar-turbiny-wiatrowej-w-gminie-czarnocin,62062</link>
   <guid isPermaLink="false">1f62e765811fbf2c4a84dd0c2ccc6f53175c7368</guid>
@@ -47,6 +37,16 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260405_69d2242fbe0a2.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260405_69d2242fbe0a2.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260405_69d2242fbe0a2.webp" />
+</item>
+<item>
+  <title><![CDATA[Przeciętna polska rodzina wyrzuca 165 kg żywności rocznie]]></title>
+  <link>https://epiotrkow.pl/news/przecietna-polska-rodzina-wyrzuca-165-kg-zywnosci-rocznie,62057</link>
+  <guid isPermaLink="false">b25d3b64d72d09d6d2ebe1f1748bb90d58508e3d</guid>
+  <pubDate>Sat, 04 Apr 2026 19:14:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260404_69d1475216d9d.webp" alt="miniatura"/></p><p>Instytut Ochrony Środowiska - Państwowy Instytut Badawczy zaznaczył, że w skali kraju rocznie wyrzuca się ponad 2,5 mln ton żywności, a gospodarstwa domowe odpowiadają za prawie 60 proc. całkowitego marnotrawstwa żywności w Polsce. „Choć Wielkanoc trwa krócej niż Boże Narodzenie, mechanizm marnotrawstwa żywności pozostaje ten sam. Przygotowujemy wiele potraw »na zapas«, często znacznie przekraczając realne potrzeby domowników i gości” - wskazał IOŚ-PIB. Dodał, że w okresie Wielkanocy „w krótkim czasie kumulują się niemal wszystkie czynniki sprzyjające marnowaniu żywności”, co w efekcie generuje obciążenie środowiska i straty finansowe dla rodzin. IOŚ poinformował, że według szacunków polska rodzina na niewykorzystanej żywności traci średnio 2–3 tys. zł rocznie, a co tydzień do kosza trafiają produkty warte kilkadziesiąt zł. Dodał, że ponad 80 proc. zmarnowanej żywności trafia bezpośrednio do kosza. Jak wyliczył, największą część, bo 25 proc. odpadów stanowią gotowe dania i resztki…</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260404_69d1475216d9d.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260404_69d1475216d9d.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260404_69d1475216d9d.webp" />
 </item>
 <item>
   <title><![CDATA[Zadbaj o bezpieczeństwo swojego domu i mieszkania]]></title>
