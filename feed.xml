@@ -5,7 +5,7 @@
 <title>epiotrkow.pl – Wydarzenia v3</title>
 <link>https://epiotrkow.pl/news/</link>
 <description>Automatyczny RSS z list newsów epiotrkow.pl.</description>
-<lastBuildDate>Sun, 02 Aug 2026 14:52:20 +0000</lastBuildDate>
+<lastBuildDate>Sun, 02 Aug 2026 16:18:14 +0000</lastBuildDate>
 <ttl>60</ttl>
 
 <item>
@@ -59,16 +59,6 @@
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260731_6a6ca5ede97f7.webp" />
 </item>
 <item>
-  <title><![CDATA[Szalona zabawa na miejskiej potańcówce w Rynku ZDJĘCIA]]></title>
-  <link>https://epiotrkow.pl/news/kolejna-potancowka-w-rynku-trybunalskim-tlumy-mieszkancow-swietnie-bawily-sie-z-dj-em-yugii,63581</link>
-  <guid isPermaLink="false">34a41512bb312e4b5775c28beb7c25f17771e069</guid>
-  <pubDate>Sat, 01 Aug 2026 22:40:00 +0000</pubDate>
-  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260801_6a6e5aff57634.webp" alt="miniatura"/></p><p>Podczas sobotniej potańcówki bawiły się dziesiątki osób. Wakacyjne potańcówki organizowane przez Miejski Ośrodek Kultury w Piotrkowie Trybunalskim od kilku lat na stałe wpisały się w letni kalendarz miejskich wydarzeń i cieszą się dużą popularnością wśród mieszkańców. Kolejną zaplanowano na 15 sierpnia..</p>]]></description>
-  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260801_6a6e5aff57634.webp" type="image/webp" />
-  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260801_6a6e5aff57634.webp" medium="image" />
-  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260801_6a6e5aff57634.webp" />
-</item>
-<item>
   <title><![CDATA[Kolejna zmiana znanej stacji w Piotrkowie. Na miejscu pojawiło się nowe logo]]></title>
   <link>https://epiotrkow.pl/news/petroprix-otworzy-stacje-paliw-w-piotrkowie-trybunalskim-trwaja-przygotowania-przy-al-armii-krajowej,63564</link>
   <guid isPermaLink="false">839d0b9656bdc22ac61348db0c7ded6171d01ae3</guid>
@@ -77,6 +67,16 @@
   <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260731_6a6ca664cb97b.webp" type="image/webp" />
   <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260731_6a6ca664cb97b.webp" medium="image" />
   <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260731_6a6ca664cb97b.webp" />
+</item>
+<item>
+  <title><![CDATA[Szalona zabawa na miejskiej potańcówce w Rynku ZDJĘCIA]]></title>
+  <link>https://epiotrkow.pl/news/kolejna-potancowka-w-rynku-trybunalskim-tlumy-mieszkancow-swietnie-bawily-sie-z-dj-em-yugii,63581</link>
+  <guid isPermaLink="false">34a41512bb312e4b5775c28beb7c25f17771e069</guid>
+  <pubDate>Sat, 01 Aug 2026 22:40:00 +0000</pubDate>
+  <description><![CDATA[<p><img src="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260801_6a6e5aff57634.webp" alt="miniatura"/></p><p>Podczas sobotniej potańcówki bawiły się dziesiątki osób. Wakacyjne potańcówki organizowane przez Miejski Ośrodek Kultury w Piotrkowie Trybunalskim od kilku lat na stałe wpisały się w letni kalendarz miejskich wydarzeń i cieszą się dużą popularnością wśród mieszkańców. Kolejną zaplanowano na 15 sierpnia..</p>]]></description>
+  <enclosure url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260801_6a6e5aff57634.webp" type="image/webp" />
+  <media:content url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260801_6a6e5aff57634.webp" medium="image" />
+  <media:thumbnail url="https://cdn2.e-piotrkow.pl/image/2026/thumb/335x185/20260801_6a6e5aff57634.webp" />
 </item>
 <item>
   <title><![CDATA[Polonia rozegrała ostatni sparing przed sezonem ligowym]]></title>
